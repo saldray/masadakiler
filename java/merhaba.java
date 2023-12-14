@@ -1,5 +1,5 @@
-public class merhaba {
-    public static void main(String[] args) {
-        System.out.println("Merhaba Dünya");
-    }
-}
+// public class merhaba {
+//     public static void main(String[] args) {
+//         System.out.println("Merhaba Dünya");
+//     }
+// }
