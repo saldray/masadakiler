@@ -1,0 +1,184 @@
+https://www.youtube.com/watch?v=dMJXptcnJoY&list=PLB1j0FQ4Fi10ABe5aEYmQKvor1SW-P5PU
+
+Docker Kullanımı
+* image
+    Uygulamanın çalışması için ihtiyaç duyduğu bütün
+bileşenleri içeren bir pakettir. iso dosyası gibi 
+düşünebiliriz. Bir işletim sistemi kurmak için neye ihtiyaçımız oluyor. Bir iso dosyasına aynen bunun gibi
+düşünebiliriz.
+
+* Container
+    Bize sanal bir bilgisayar işletim sistemi yaratacak
+oluşturduğumuz image ya da image'ları  sanal bir ortam
+içerisinde çalıştırıbilmemizi sağlayacak
+
+* Docker file
+    Canımızın istediği programların kurulu olduğu bir image yaratmamıza yarar. 
+
+* Docker compose
+    Benim 4 tane container im var ama bu containerları
+    tek tek ayağa kaldır indir yapmak istemiyorum Bunu böyle tek tuşla ayağa kaldırayım hepsi birden çalışmaya başlasın bütün servisler etkin olsun gösteri yapayım istiyorsanız
+    adresimiz docker composer olacaktır
+
+* Docker hub
+  Kendi yazdığımız imajları bir yerde paylaşabiliyor muyuz?
+  veya başka insanların yazdığı imajları alıp kullanabiliyor muyuz?
+Böyle bir imkanımız var mı? var tabii ki
+Tıpkı bir google store gibi apple store gibi girip
+imajları indirebileceğimiz bir yer
+
+* volume
+  silinen container ların dosyalarını kurtarmak için
+kullanabiliriz
+        Container içindeki dosyaları saklamak paylaşmak istiyorsak bunun için volume biçilmiş kaftan
+
+* Kuburnets
+
+  Benim 4 tane sunucum var ve bu sunucularda dockerlar
+  kurulu dockerlar içerisinde bazı containerlar var
+  Ben bunu tek bir noktadan bir şekilde yönetmek istiyorum.
+  Yönetebilir miyim? ve daha fazlasını yapabilir miyim?
+  Yönetebilirim evet yapabilirim
+
+hemen bir şeyler yapmak istiyorum bunu yapabilir miyiy
+Evet yapabilirim.
+
+Komutlar:
+
+docker pull ubuntu (indiriyor)
+
+şimdi elimde bir tane ubuntu image dosyası var.
+Ben bunu nasıl kurubilirim
+
+docker run -d -t --name mydevc ubuntu (böyle kurabilirim)
+
+docker ps
+(çalışan bütün dockerlarımı listeleyebilirim)
+
+docker exec it mydevc bash
+(ubuntunun içerine girerek biraz komut çalıştıralım)
+
+docker hub da bunların kurulmuş halleri var.
+
+nodejs geliştirmek istiyorum docker hub dan indirip çılıştıralım node 20 yi indireceğim
+
+docker run -d -t --name mydev-node node:20
+(kurulumunu yapıp hemen çalıştırırız)
+
+Bunun içerisine girmek istersek
+docker exec it mydev-node bash
+(ls yapınca görüyorum)
+
+vs code ile dosyanın içerisine girip değişiklikler yapabiliriz
+
+vs code sol alt köşeyi seçiyorum ara çubuğunda
+"Attach to Running Container" oluşturduğum container
+görünecek yeni bir pencere açar ve çalışmaya başlar
+
+
+* docker file
+
+(docker file imin bulunduğu dizine giderim)
+
+docker build -t mydeving (-t tag)
+
+docker images (image lerimi görüyorum)
+
+docker rmi  (i image daha sonrasında silmek istediğim image dosyasının adını yazarak silebilirim)
+
+docker run -d -t --name mydevcus mydevimg(var olan kullanacağım imagenin adı)
+
+docker ps (çalışıp çalışmadığına bakıyorum)
+
+nodejs çalışıyor ama ona ulaşamıyoruz 3000 portunda çalışıyor ama ona ulaşamıyoruz şimdi yapmış olduğumuz
+container ı silip yeniden kuralım
+
+docker stop mydevcus (durduruyorum)
+
+docker rm mydevcus (silme işlemini gerçekleytirdim)
+
+docker run -d -t -p 3000:3000 --name mydevcus mydevimg (-p port demek bilgisayarımın 3000 portunu docker imin 3000 portuna yönlendir dedik)
+tarayıcımda 3000 yazıp bakarsam
+
+https://www.youtube.com/watch?v=mw1GqJbyawI&list=PLe1QWkyzVMv6psIEboToi7sbcNpQlhc9c&index=3
+
+docker komutlarına yakından bakış: Bilmeniz gerekenler.
+
+docker help
+
+kaç tane komut olduğunu bir sayalım
+
+docker help | grep '\s\s[a-Z]' | wc -l
+(\s iki tane boşluk geliyor ondan sonra [a-Z] a'dan Z'ye
+karakterler geliyor.)
+
+Container lifecycle & debug komutları
+
+docker run          çalıştır
+docker rm           durdur & sil
+docker ps           çalışanları listele
+docker logs         logları takip et
+docker exec         container'ın içine gir
+
+Image komutları
+
+docker build        container image yarat
+docker pull         image download
+docker push         image upload et
+docker tag          isim ver
+
+container = çalışan şey
+image = container'ın filesystem'ini içeren dosyalar
+
+docker run ubuntu
+
+docker ps
+
+docker ps -a
+
+docker --rm -i -t ubuntu
+
+--rm        docker ile işim bittiğinde docker'ı sil
+-i          interactive etkileşimli
+-t          tto yu açıyor
+
+# ps aux (ubuntu içinde proseslere bakıyoruz)
+
+docker run --rm -i -t 
+bunu çok kullanacaksak alias haline getirelim 'dr' adını verelim
+bakmak için 
+alias dr
+dr='docker run --rm -i -t'
+
+docker run -d -p 8080:80 --restart=always
+-d deamon yani arka planda çalışacak
+-p port
+
+
+docker logs
+
+
+docker container rm $(docker container ls -aq)
+docker container rm -f $(docker container ls -aq)
+docker image rm -f $(docker image ls -aq)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
