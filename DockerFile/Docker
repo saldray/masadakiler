@@ -151,7 +151,7 @@ alias dr
 dr='docker run --rm -i -t'
 
 docker run -d -p 8080:80 --restart=always
--d deamon yani arka planda çalışacak
+-d yani arka planda çalışacak (daemon off)
 -p port
 
 
@@ -161,24 +161,4 @@ docker logs
 docker container rm $(docker container ls -aq)
 docker container rm -f $(docker container ls -aq)
 docker image rm -f $(docker image ls -aq)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
