@@ -1,0 +1,43 @@
+https://www.howtogeek.com/671422/how-to-use-tmux-on-linux-and-why-its-better-than-screen/
+
+To close the window, press Ctrl+B, and then quickly hit X. The status bar turns amber. You're then prompted to confirm you want to kill the window.
+
+Press Y to close the window or N if you change your mind. You don't have to press Enter afterward; Y or N is enough to register your choice.
+
+To start tmux with a session name, use the new (new session) command, and the -s (session name) option. Our session is going to be called "geek-1," so we type the following:
+
+To create a new window in the current session, press Ctrl+B, and then C. You'll get a blank terminal window in the current session. So we'll have something running in this new window, let's start the dmesg command with the -w (follow) option:
+
+
+To hop between windows, press Ctrl+B, and then one of the followings keys:
+
+    N: Display the next window.
+    P: Display the previous window.
+    0 to 9: Display a window numbered 0 to 9.
+
+You can also choose a window from a list. If you press Ctrl+B, and then W, a list of windows appears.
+
+
+
+ Detaching and Attaching Sessions
+
+If you press Ctrl+B, and then D, you will detach the session. It will continue to run in the background, but you won't be able to see or interact with it.
+
+We've started top in the session so we have a running process to demonstrate with. Then, we press Ctrl+B, and then D. The session disappears and becomes a background session.
+
+
+To attach a detached session, we'll use the self-explanatory attach-session command with the -t (target session) option. We'll also provide the name of the session we wish to recall.
+
+We type the following:
+
+tmux attach-session -t geek-1
+
+
+
+ Working with Window Panes
+
+If you press Ctrl+B, and then double quotation marks (""), you split the window horizontally into two panes.
+
+Ctrl+B x close
+
+If you press Ctrl+B, and then the percentage sign (%) it splits the current pane vertically.
