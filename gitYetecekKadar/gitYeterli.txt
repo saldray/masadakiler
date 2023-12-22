@@ -1,0 +1,74 @@
+Tanımlara hakim olalım
+
+Git       : Free and open source version control system.
+          What is the version control?
+The management of changes to documents, computer programs,
+large web sites ahd other collections of information
+
+Directory : Folder  (Dizin : Klasör)
+Terminal or Command Line   : Interface for Text Commands
+(metin komutları için arayüz)
+
+Terminal         : Uçbirim, Komut satırı, Konsol
+
+CLI    : Command line interface (Komut satırı arayüzü)
+
+cd     : Change Directory
+
+Code Editor     : Word Processor for writing code
+
+Repository      : Project or the folder/place where you project is kept (Depo)
+
+Github          : A website to host your repositories online
+                (ana makinemizdeki depolarımızı çevirim içi barındıran bir websitesi)
+
+host            :ana makine, ev sahipliği yapmak, barındırmak
+
+clone           : Bring a repository that is hosted somewhere like Github into a folder on your local machine
+
+add             :Track your files and changes in Git
+
+commit          :Save your files in git
+(Dosyalarımızı git'e (içine) kaydetmeye yarıyor)
+(işlemek, kaydı güncellemek, teslim etmek)
+(commit ile (local repo) yerel repo'ya kayıt yapılmış olur.)
+
+push      :Upload Git sommits to a remote repo, like Github
+(push ile uzak depo'ya (remote repo(github)) kayıt yapılmış olur.)
+
+Pull      :Download Changes from remote repo to your local machine(host)
+
+Protocal  : Teşrifat
+          :* Uyulması gereken kurallar kümesi.
+          :** Bilgisayar bilimleri açısından protocoller (teşrifatlar)
+          genelde iki veya daha fazla taraf için yapılması
+          gereken bir duzu is belirtir.
+
+
+
+user.name ve user.email (bakalım)
+
+git config user.name    kullanıcı adımıza bakalım.
+git config user.email   kullanıcı elektronik posta adresimize bakalım.
+
+git config --list       Daha önce yapılmış bir atama varsa ekranda listelenir.
+git config --global user.name 'kullanıcı_adı'   ad atanır
+git config --global user.email 'eposta_adı'     e-posta atanır
+git config --list
+
+##########
+Şimdi çalışma dizinimizde bir git oluşturalım.
+
+git init      git ilk olarak başlatılıyor, yükleniyor.
+git status    Durum bilgisi alınır.
+git add .     bulunulan dizindeki değişiklikler geçiş bölgesine
+              gönderilir. İndex bölgesine gönderildi.
+git status    durum kontrol edilir.
+git commit -m "bir ileti yazılır"       daha sonrada ne yaptınğımızı anımsamak için
+-m            message
+git status    Durum kontrolü
+
+
+git add -A    git add .  Tüm değişiklikler staging area'ya gönderildi.
+
+git push      En son remote repo'ya (github'a) gönderilir.

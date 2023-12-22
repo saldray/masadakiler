@@ -38,5 +38,3 @@
 ==staging area==: Geçis bölgesi
 ==commit==: Yaptığımız değisiklikleri kaydediyoruz. Gönderiyoruz.
 
-
-
