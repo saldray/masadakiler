@@ -72,3 +72,53 @@ git status    Durum kontrolü
 git add -A    git add .  Tüm değişiklikler staging area'ya gönderildi.
 
 git push      En son remote repo'ya (github'a) gönderilir.
+
+
+#############################
+## github'dan clone yaptığımda git remote çalışır
+$ git clone https:githup.com/username/....
+
+git status      (durum hakkında bilgi alıyoruz)
+git log         (verilen commitleri görürüz)
+                (commit: to perform; to do : yapmak,(suç cinaye)
+                işlemek)
+
+# masaüstünde localde(yerelde) indirdiğim dizinin içerisindeki bir
+# dosyada değişiklik yapayım. Değişiklik yapıldıktan sonra
+
+git status           (m modified yani değiştirilmiş olduğunu görüyorum)
+                     Bunları staging area'ya almam gerekiyor
+
+git add .            (staging area'ya(geçiş bölgeisine, indeks bölgesine)
+                     alındı)
+
+git commit (-a) -m "localde içerikler değişti"          (git add ile staging area'ya
+                     aldığım kayıtları, git commit ile local area'ya işledim)
+                     (Şu anda yerel depomda kayıtlanmış oldu)
+
+#git checkout        (branch (dal) değiştirmek için kullanılır daha sonradan
+                     bakılabilir şimdilik ihtiyacım yok. İleride bakılacak)
+
+git log              (yaptığım değişiklikler hakkında bilgi alırım, attığım
+                     commit'ler burada görülür.)
+
+git remote           (Originde olduğumu görürüm)
+git remote -v        (Originin nereden kaynaklandığını ve hangi parametreleri
+                     kullanacağımızı gösterir
+                     push yapacağım zaman nereye gideceğimi gösteriyor.)
+
+git push origin main
+
+###########################
+=== create a new repository on the command line ===
+git init             (git başlatılır, git kurulur.)
+git add README.md   (README.md okubeni dosyası eklenir. .md markdown uzantılı)
+git commit -m "first commit"   adettendir ilk commit (kayıt) "first commit" diye atılır.
+git branch -M main   (git "master" branch (dalında) ında çalışır.
+                      github "main" branch (dalında) ında çalışır.
+                      git varsayılanı "master"
+                      github varsayılanı "main"
+                      local repo'muzda git ile kayıtladığımız dosyaları ve
+                      değişiklikleri daha sonradan github'a, remote repo'ya
+                      gönderdiğimizde sorun yaşamamak için git'i "master"dan
+                      "main" branch'ına geçiriyoruz.)
