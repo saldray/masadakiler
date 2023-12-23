@@ -82,3 +82,16 @@ ikinci akış diagramı
 üçüncü akış diagramı
 ![gitflowww](Git-And-Git-Work-Flows.png)
 
+> İkinci denemede png biçimindeki fotoğrafları png dizinine atıp oradan görüntüleyeceğim
+
+>git'in ilk akış diagramı
+
+![gitdiagram](./png/gitflow.png)
+
+>git'in ikinci akış diagramı
+
+![gitdiagram1](./png/gitflow1.png)
+
+>git'in üçüncü akış diagramı
+
+![gitdiagram2](./png/gitflow2.png)
