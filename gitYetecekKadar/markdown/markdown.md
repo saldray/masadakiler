@@ -95,3 +95,76 @@ ikinci akış diagramı
 >git'in üçüncü akış diagramı
 
 ![gitdiagram2](./png/gitflow2.png)
+
+
+# Block quotes
+
+> This is a block quote.
+
+>> Use two right angle brackets if you want a block quote that is further indented.
+
+> This is a block <Enter> quote.
+
+> Adding links in Markdown
+
+Visit [ıt's FOSS](https://itsfoss.com) today!
+
+<http://automatic-link-to-url.com/>
+
+<name@emailaddress.com>
+
+*text* or _text_
+
+**text** or __text__
+
+> Blockquote
+>> Blockquote
+>>> Blockquote
+
+**Ordered list**
+> **Ordered list**
+
+1. Item 1
+2. Item 2
+3. Item 3
+
+> *Unordered list*
+>> **Unordered list**
+>>> __Unordered list__
+
+> Use *,- or + *
+
+* Item 1
+* Item 2
+* Item 3
+
+- Item 4
+- Item 5
+- Item 6
+
++ Item 7
++ Item 8
++ Item 9
+
+> Sublist
+
+>> Use indentation
+1. Item 1
+  1. Sub-item 1
+  2. Sub-item 2
+2. Item 2
+3. item 3
+
+> Inline Code
+ `code`
+> Code block
+```code here```
+>Horizontal rules
+-------------------------------
+
+*******************************
+
+[it foss](https://itsfoss.com/markdown-guide/ "baglantıburada")
+
+
+![cheat sheet](https://itsfoss.com/content/images/wordpress/2021/04/markdown-syntax-cheatsheet.png)
