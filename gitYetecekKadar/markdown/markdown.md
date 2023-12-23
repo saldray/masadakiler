@@ -74,3 +74,11 @@ genel olarak kod yazmak için kullanılır
 * [ ] task 3
 yaptıkça güncelleyebilirim
 
+git photo ekleme
+ilk akış diagramı
+![gitflow](gitworkflow.png)
+ikinci akış diagramı
+![gitfloww](Git_workflow.png)
+üçüncü akış diagramı
+![gitflowww](Git-And-Git-Work-Flows.png)
+
