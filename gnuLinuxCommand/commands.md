@@ -6,4 +6,6 @@
 
 ```unzip data.zip -d Yedek```
 
-[unzip](https://itsfoss.com/markdown-guide/)
+<https://itsfoss.com/markdown-guide/>
+
+[unzip](https://www.linuxdata.net/orneklerle-linuxta-unzip-komutu-nasil-kullanilir/)
