@@ -1,0 +1,15 @@
+You’d like to print the grade with the most occurrences
+En çok tekrarlanan notu yazdırmak istiyorsunuz
+
+Next, use uniq to count adjacent lines
+Daha sonra bitişik satırları saymak için uniq'i kullanın
+
+Listing multiple files by name is a tedious time-waster, so the shell provides special characters as a shorthand to refer to files or directories with similar names. Many folks call these characters wildcards, but the more general concept is called pattern matching or globbing.
+
+Birden fazla dosyayı ada göre listelemek sıkıcı bir zaman kaybıdır, bu nedenle kabuk, benzer adlara sahip dosyalara veya dizinlere atıfta bulunmak için kısayol olarak özel karakterler sağlar.  Birçok kişi bu karakterleri joker karakterler olarak adlandırır, ancak daha genel konsepte desen eşleştirme veya küreselleştirme denir.
+
+
+This behavior is extremely important to understand, especially as we delve into more complicated commands.
+
+Bu davranışı anlamak son derece önemlidir, özellikle de daha karmaşık komutları incelerken.
+
