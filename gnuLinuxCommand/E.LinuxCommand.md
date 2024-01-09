@@ -40,4 +40,15 @@
 
 ---
 
+`pattern`   örüntü
+
+`file name pattern` dosya adı örüntüleri
+
+`cat` `concatenate` birleştir, ard arda bağlamak, peşpeşelemek.
+
+> art arda <Enter>
+
+>arka arkaya <Enter>
+
+>>Türkçe bir kelime olup, kökeni Arapça’dır. Ard kelimesi yer anlamına gelirken, arda kelimesi ise sıralı olarak anlamına gelmektedir. Bu nedenle ardarda kelimesi, yerlerin sıralı olarak takibi anlamına gelmektedir.
 
