@@ -376,3 +376,87 @@ ben yaratmadan copyalanarak buraya oluşturulmuş.
 
 45:40 ta kaldım.
 
+***************************
+Managing SSH keys
+***************************
+
+Ana Bilgisayar
+
+cd .ssh
+~/.ssh$ ls -l
+
+Belirli bir sunucu için ssh-key üretme
+.ssh$ ssh-keygen -t ed25519 -C "acme"
+
+-t type of key
+-t ed25519  more secure default rsa ayrıca public key
+            daha kısa kontrolü daha kolay
+
+-C          comment
+-C "acme"
+ad verebilirim
+Enter file in Which.......(..../.ssh/id_ed25519):
+/home/jay/.ssh/acme_id_ed25519
+
+ed25519 public key daha kısa ve daha güvenli
+
+.ssh$ ssh-copy-id -i ~/.ssh/acme_id_ed25519.pub root@172.105.7.26
+
+copyalandı. Sunucuya bağlanıp denerim.
+
+.ssh$ root@172.105.7.26
+
+parola gir.
+
+sunucuda
+# cat .ssh/authorized_keys
+
+bakıp kontrol edebilirim.
+çıkış yap ctrl+d
+
+ana bilgisayar
+$ ssh -i ~/.ssh/acme_id_ed25519 root@172.105.7.26
+
+sunucuya bağlan sonra yeniden çık
+
+ana bilgisayar
+$ ssh -i ~/.ssh/acme_id_ed25519 root@172.105.7.26
+
+tekrar bağlan yine şifre istedi.
+her seferinde şifre yazıyorum biraz sinir bozucu
+çık ana bilgisayara geç
+
+Ana Bilgisayar
+
+ssh-agent'i kullanarak şifreyi bir kere girip bir daha
+girmeyeceğim
+
+ev dizinine geçti
+~$ ps aux | grep ssh-agent
+
+şayet çalışıyorsa gözükür.
+şimdi aslında nasıl başlatacağımıza bakalım.
+
+eval "$(ssh-agent)"
+Agent pid 26815  (gibi bir çıktı verdi.)
+
+ps aux | grep ssh-agent
+
+ssh-agent başlattığımız için kesin yakalayacak.
+aynı id ile
+
+$ ssh-add ~/.ssh/acme_id_ed25519
+şifre ister girerim
+
+Şimdi tekrar Sunucuya(server) bağlanalım.
+
+$ ssh root@172.105.7.26
+
+şifre sormadan sunucuya bağlanır.
+Sunucudan çıkıp tekrar ana bilgisayara geçelim
+
+Ana Bilgisayar 1:00:48
+
+*******************************
+Configuring OpenSSH
+*******************************
