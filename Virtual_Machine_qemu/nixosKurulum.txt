@@ -1,0 +1,145 @@
+ls /dev
+
+sudo su -
+o user'a (kullanıcıya) tüm envirement(ortamı, çevreyi) ı geçirirsin
+
+sudo su
+ile sadece root user olursun. Kök kullanıcısı olursun
+
+kopyala yapıştır yapmak için
+
+
+
+$ passwd
+basit bir şifre gir şimdilik. Sanal makinede şifre verdik daha
+sonra ssh ile yerel makinemizden gireceğimiz zaman bu şifreyi
+kullanacağız.
+
+şimdi kendi terminalimden ssh ile bağlanmak için
+kendi işletim sistemimdeki terminali açarım
+
+sanal makinenin ip adresini öğrenirim
+kendi yerel bilgisayarımda
+$ ssh nixos@192... ip adresini girerim
+ilk defa bağlandığım için benden izin isteyecek
+"yes" diyorum ve sanal makinede girdiğim passwd ile bağlanırım
+
+
+
+
+
+parted /dev/vda -- mklabel gpt
+# GUID Partition Table
+
+parted /dev/vda -- mkpard primary 512MiB -2GiB
+512MiB lık bir disk birimi ayarladı. Boot edebileceğim 512MiB lık
+
+parted /dev/vda -- mkpart primary linux-swap -2GiB 100%
+
+parted /dev/vda -- mkpart ESP fat32 1MiB 512MiB
+bootloader oluşturuyorum
+
+parted /dev/vda -- set 3 esp on
+fdisk -l ile diskin tablosunu listeliyorum.
+üç tane disk bölümü oluşturduğumu görüyorum
+/dev/vda1 bütün dosya sistemimiz
+/dev/vda2 swap (takas) alanımız
+/dev/vda3 EFI System (boot) sistemi başlatma alanımız
+
+# formatting
+Bölümleri ayarladık şimdi biçimlendireceğiz.
+mkfs(make file) ile linux'de desteklenen dosya sistemlerine
+bakabiliriz.
+
+mkfs.ext4 -L nixos /dev/vda1
+ayırdığımız bölümü ext4 olarak biçimlendiriyoruz.
+-L label etiketliyoruz diskin adı "nixos" olacak.
+
+mkswap -L swap /dev/vda2
+
+mkfs.fat -F 32 -n BOOT /dev/vda3
+
+# mounting
+Diskimiz şu an biçimlendirildi ama hale diskimize erişemiyoruz
+Diskimizdeki bölümleri bağlamamız gerekiyor.
+
+mount /dev/disk/by-label/nixos /mnt
+-L ile yukarıda etiket verdiğim için "nixos" yazıyorum ad değişebilir.
+mount yazıp bakarsam bilgisayara bağlanmış olan diskleri ve
+onların kaynaklarını (source) gösterir.
+
+mkdir -p /mnt/boot
+mnt dizininin altında 'boot' dizini yarattık.
+ls /mnt  ile oluşturduğumuz dizine bakabiliriz.
+
+mount /dev/disk/by-label/BOOT /mnt/boot
+mount komutu ile tipinin vfat olduğunu görebiliriz.
+
+swapon /dev/vda2
+Burada swap açılır.
+görmek için 'free' komutunu vererek bakabilirsin.
+swapoff /dev/vda2 ile kapatıp tekrar 'free' komutu ile bakabilirsin.
+
+nixos-generate-config --root /mnt
+root dediği bu işletim sisteminde root olarak nereyi kabul edeyim. burayı kullan diyorum
+
+
+
+
+kopyala yapıştır yapmak için
+
+$ passwd
+basit bir şifre gir şimdilik
+
+şimdi kendi terminalimden ssh ile bağlanmak için
+kendi işletim sistemimdeki terminali açarım
+
+sanal makinenin ip adresini öğrenirim
+kendi yerel bilgisayarımda
+$ ssh nixos@192... ip adresini girerim
+ilk defa bağlandığım için benden izin isteyecek
+"yes" diyorum ve sanal makinede girdiğim passwd ile bağlanırım
+
+vim /mnt/etc/nixos/configuration.nix
+dosyasının içinde değişiklikler yapıyoruz.
+
+vim ile
+ctrl+v  aşığı yukarı seçim yap shift+I, altgr+3 (#), esc
+yorum ekler
+
+yorum olan satırları kaldırma
+ctrl+v, x
+aşağı ya da yukarıya seçim yapılır gerekirse sağa ilerlenerek
+sütun sayısı ayarlanır ve x tuşuna basılarak silinir.
+
+Kuruluma geçilir.
+# nixos-install
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

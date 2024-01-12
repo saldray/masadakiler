@@ -1,0 +1,378 @@
+Connecting to a server via OpenSSH
+
+local dizüstü
+jay@studio-laptop:~$
+
+$ which ssh
+/usr/bin/ssh
+
+Eğer kurulu değilse bir böyle bir çıktı almam.
+Örnek olarak kurulu değilse ubuntu depolarında paketin
+olup olmadığını araştırabilirim.
+
+$ apt search openssh-client
+Eğer kurulu ise çıktıda
+.... [installed, automatic] gibi bir şey yazar.
+
+localde, ana bilgisayarımdayım
+$ ssh root@172.105.7.26
+
+root kullanıcı adı linode sunucu sağlayıcısında varsayılan olarak geliyormuş
+hostname, domain name, IP address sunucu tarafından sağlanıyor
+
+Burada kullandığımız sunucunun bir önemi yok yerel
+bilgisayarımızda çalıştırdığımız ya da her hangi bir yerde çalışan sunucu olsun fark etmez bizim için
+önemli olan bize sağlayacağı "IP adresi"
+
+ilk bağlandığımızda bize fingerprint eklensin mi
+diye soracak sunucu daha sonradan bizi tanımak
+için bir şifre yazacak
+
+şifre soracak burada sanal makinenin şifresi girilir
+
+ctl+d ile tekrar local machine (ana bilgisayarıma)
+dönerim.
+
+jay@studio-laptop:~$ ls /home/jay -a
+gizli dosyalarda ".ssh" i görürüz.
+
+jay@studio-laptop:~$ cd .ssh
+dizinin içine girmiş oluruz.
+
+jay@studio-laptop:~/.ssh$ ls
+ile içine bakalım
+
+know_hosts şu an bizi bu dosya ilgilendiriyor
+cat komutu ile içine bakalım
+
+cat known_hosts
+fingerprints bu dosyanın içine kaydedilir ve
+bir dahaki girişimizde bize sorulmaz.
+
+tekrar remote server, uzak sunucu, sanal makineye
+bağlandığımız da sadece parola soracak
+
+jay@studio-laptop:~/.ssh$ ssh root@172.105.7.26
+root@172.105.7.26 password:
+isteyecek
+
+ctrl+d disconnect  uzak bilgisayardaki bağlantıyı kesip
+tekrardan yerel(ana) bilgisayarıma geçiyorum
+jay@studio-laptop:~/.ssh$ rm known_hosts
+dosyayı siliyorum
+
+sunucuya tekrar bağlandığım da
+jay@studio-laptop:~/.ssh$ ssh root@172.105.7.26
+Tekrar fingerprint i soruyor. Daha önceden bizi tanıdığı
+kayıtlı olduğu dosyayı sildiğimiz için tekrardan bizi bir daha bağlantı kuracağımız zaman tekrar her seferinde sormaması için
+tanımlayıcı şifresini yükleyecek.
+
+ctrl+d  bağlantıyı sonlandırıp ana bilgisayarımıza geçelim.
+
+jay@studio-laptop:~/.ssh$ ls -l
+silinen known_hosts tekrar oluşturulmuş
+
+jay@studio-laptop:~/.ssh$ cat known_hosts
+fingerprint'in çıktısını ekrana bastırılmış olarak
+görebiliriz.
+
+!! Bunun önemi
+man in the middle attack
+saldırısından korunmak için bizi farklı bir sunucuya göndermesinde
+
+I am connecting to a server with this ip address right
+here (172.105.7.26) so what if someone created a malicious server
+from sratch that has set up a new ubuntu server and
+they were able to apply this ip address to their server rather than the server that I actually want to connect to
+if that's case it's actually going to see that the fingerprint
+has changed and when that happens it' going to give you
+a warning the fingerprint has changed for this ip address
+are you sure you want to connect which is going to help
+you avoid a situation where you are not connecting to
+now what I'm going to do is activate tmux
+18.01 inci dakikada kaldım.
+
+ana makineden sunucuya bağlan
+$ ssh root@172.105.7.26
+şifreyi gir sunucudayım
+
+# cd /var/log
+# ls
+auth.log dosyasının içine bakacağım
+log# tail -f auth.log
+log dosyasının içini takip edeceğim otomatik olarak
+güncellendiğini göreceğim
+
+Başka bir terminalden ya da uç birimde açılan yeni bir
+pencereden ana makinemden tekrar sunucuya bağlanayım ve
+olan değişikliklere bakayım
+
+ana makine
+$ ssh root@172.105.7.26
+şifreyi gir bağlan
+# sunucudayım
+
+sunucuda açık olan log dosyasında otomatik olarak güncelleme olduğunu görüyorum.
+
+Bu neden önemli hata mesajı aldığımızda buradan
+takip edebiliriz.
+
+nerede sorun olduğunu görebilirim şifre yanlış girildiyse
+fark ederim. Sorunu çözmem kolaylaşır.
+
+
+**************************
+
+Configuring the Openssh Client
+
+istemci tarafında yani ana makinede Openssh dosyasının
+ayarlanması.
+
+ana makinedeyim
+$ ssh root@172.105.7.26
+sunucuya bağlanırım şu an bağlanmıyorum
+
+ana makine
+$ cd ~/.ssh
+/.ssh$ ls
+
+/.ssh$ touch config
+config dosyası oluşturdum bir bakayım
+
+/.ssh$ ls
+
+/.ssh$ nano config
+root olarak bağlanmadan da değişiklik yapılabiliyor
+
+client (istemci) ana makinedeyim
+Host
+istediğim bir adı verebilirim bir önemi yok.
+Host myserver
+  Boşluk bırakmak kodun anlaşılabilir olması için önemli
+  Belki daha başka tanımlamalarda yapacağım kolay okunması
+  için önerilir.
+
+  Hostname 172.105.7.26  (sunucunun IP adresi)
+  Port 22 (varsayılan olarak secure shell (ssh)'in portu)
+  User root (sunucunun Whoami'i )
+
+Yani
+
+Host myserver
+  Hostname 172.105.7.26
+  Port 22
+  User root
+
+ssh client bu dosyayı gördüğünde sunucunu IP adresini
+yazmama gerek kalmayacak
+
+Ad ne olursa olsun hiç önemli değil.
+Port 22 varsayılan yazmama da gerek yok. Ama alışkanlık olsun.
+ctrl+x yes ya da ctrl+o, ctrl+x nano'dan çıkış yap.
+
+hala ana bilgisayardayım sunucuya bağlanayım
+root@172.105.7.26 anımsaması biraz zor .ssh dizinin içine
+yaptığım değişiklikle config dosyasına atadığım adla
+sunucuya bağlanayım
+
+$ ssh myserver
+şifreyi girer ve sunucuya bağlanırım.
+
+ana bilgisayarda
+~/.ssh/config nano ile açıp Host adını değiştirip deneme yapayım
+
+$ nano config
+
+Host lltv
+  Hostname 172.105.7.26
+  Port 22
+  User root
+
+F3 enter, F2 ya da ctrl+x, yes enter, ctrl+o, ctrl+x
+
+ana makineden
+$ ssh lltv
+root@172...şifreyi gir ve bağlan
+aynı sunucu adın değişmesinin bir önemi yok.
+ctrl+d sunucudan çıkıp tekrar ana makineye dönerim
+
+ana makine
+~/.ssh$ nano config
+
+config dosyasının içine çoklu sunucu ekleyebilirim.
+Benim için Sanal makinemde başka bir sunucunun açık olduğunu varsayıyorum.
+IP adresini(hostname, domain name), username bilmiyorsam
+öğrenirim.
+hostname : $ ip a ya da $ ifconfig -a ya da $ hostname -I
+username : whoami
+
+şu an dosyanın içindeyim
+
+Host lltv
+  Hostname 172.105.7.26
+  Port 22
+  User root
+
+Host server2
+  Hostname 172.16.249.6
+  Port 22
+  User jay
+
+(adın bir önemi yok karıymaması için mantıklı bir ad iyi olur.)
+  ctrl+o ctrl+x : F3 enter, F2
+
+ana makinede
+$ ssh server2
+
+ilk defa bağlandığım için fingerprint istiyor. yes de
+sunucu şifresini girdiğinde sunucuya bağlanır.
+
+ctrl+d sunucudan çık
+
+ana makinedeyim
+.ssh/config dosyasının bana sağladığı kolaylık
+IP adresini ve kullanıcı adını anımsamama gerek kalmadan
+Belirlediğim bir adla sunucuya bağlanmamı sağlıyor.
+
+***********************
+Using public/private keys
+**********************
+
+public/private keys ek güvenlik ve rahatlık sağlar.
+
+ana bilgisayardayım
+jay@studio-laptop:~$ ssh root@172.105.7.26
+sifreyi gir.
+
+sunucuya bağlanırı şifre girmem gerekiyor. Openssh
+güvenli olmasına rahmen hackerların düşük güvenlikli
+şifremi kırması pek zaman almaz.
+
+sifreyi sorulduğu hackerların deneyerek bulması gibi
+bir olasılık doğmuş oluyor.
+
+password girişini etkisiz kılarak ssh key(ssh anahtarı)
+ile girmeyi öğreneceğiz.
+
+ssh anahtarı ile Böylelikle hackerların password şifresini
+deneyerek sunucuma girme ihtimallerini ortadan kaldıracağım.
+
+ana bilgisayar (local computer)
+
+hiç bir parametre vermeden varsayılan ssh key üretme
+
+~$ ssh-keygen
+id_rsa oluşturacak
+
+Öncelikle böyle bir dosyamızın olmadığından emin olalım.
+yoksa üzerine yazacak ve daha önce girdiğimiz sunuca
+giremeyeceğiz
+
+Birisi ssh key imizi çalarsa passphrase key imizi bilmeden
+onu kullanamaz bu nedenle bir önemi var.
+
+cd .ssh
+ls -l
+
+daha önce olmayan  id_rsa ve id_rsa.pub 'in oluşturulduğunu
+görüyorum. Daha önce bu adlarda dosya olsaydı üzerine yazacaktı
+unutma
+
+.ssh$ cat id_rsa.pub
+
+içine bakabilirim.
+Bu dosyanın içini kimin gördüğünün bir önemi yok.
+private key olmadığı sürece public key in kimin
+gördüğünün bir önemi yok.
+Ancak private key görüldüğünde bu bir güvenlik açığıdır.
+artık sunucunun güvenliğinin bir anlamı kalmamıştır.
+Tüm sunucuların anahtarları değiştirmelidir.
+
+ana bilgisayarımda (local computer) oluşturduğum public
+key sanal makinede(server da sunucuda)
+~/.ssh içine yerleştirilmeli. Yoksa sunucu içinde oluşturulmalı.
+
+misal sunucuda yok
+~/.ssh# nano authorized_keys
+
+içine yapıştır. tek satır görülecek. Normalde tek satır
+alt alta gözüksede tek satır.
+kaydet çık
+
+Sunucudan çık
+# logout ya da ctrl+d
+
+Ana makinemdeyim. (local computer)
+
+$ ssh root@172.105.7.26
+
+anında sunucuya bağlanır şifre istemez.
+keyler birbirini tanıdığı için şifre istemeden giriş yapar.
+
+logout, ctrl+d
+
+Ana makinedeyim (local computer)
+
+$ ssh -v root@172.105.7.26
+
+-v verbos sunucuya bağlanıncaya kadarki süreci bana gösterir.
+
+$ rm id_rsa*
+
+anahtarı kaldırıyorum artık şifre istemeden bağlanamam
+
+$ ssh-keygen  (varsayılan key oluşturuyorum yine)
+
+oluşan public key'i kopyala ve sunucuya tekrar bağlan
+
+$ ssh root@172.105.7.26
+şifre soruyor şifreyi gir.
+
+Sunucudayım şu anda
+
+# nano .ssh/authorized_keys
+
+varolan key'i sil ana makinede oluşturup kopyaladığın
+yeni key'i yapıştır. Çıkış yap ctrl+d, logout
+
+Ana makinedeyim
+
+Yeni public key ile bağlanmayı deneyeyim
+$ ssh root@172.105.7.26
+
+eskisine passphrase koymuştum. Şimdi açmak için benden
+passphrase şifremi istiyor.
+Alttaki kutuyu işaretle ve passphrase i gir.
+
+ctrl+d çık , ana makineye geç.
+
+ana makinedeyim
+
+tekrar sunucuya bağlan
+$ ssh root@172.105.7.26
+
+tekrar doğrudan sunucuya bağlanır. Şifre istemeden.
+
+Ana makinedeyim
+
+Public key'i kolay yoldan kopyalama.
+
+$ ssh-copy-id -i ~/.ssh/id_rsa.pub root@172.105.7.26
+
+-i input file then we're typing the path to the public key
+that we want to actually add to the remote server and
+then like always we have the username at and the ip address
+
+Enter de şifre isteyecek sunucu şifresi yaz ve eklenir.
+
+ana makineden sunucuya tekrar bağlan
+ssh root@172.105.7.26
+
+doğrudan bağlanır. sunucu içerisindeki .ssh dizininin
+içine bakalım.
+.ssh# ls
+
+ben yaratmadan copyalanarak buraya oluşturulmuş.
+
+45:40 ta kaldım.
+
