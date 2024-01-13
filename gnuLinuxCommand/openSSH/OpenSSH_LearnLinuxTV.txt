@@ -218,7 +218,7 @@ Host server2
   Port 22
   User jay
 
-(adın bir önemi yok karıymaması için mantıklı bir ad iyi olur.)
+(adın bir önemi yok karışmaması için mantıklı bir ad iyi olur.)
   ctrl+o ctrl+x : F3 enter, F2
 
 ana makinede
@@ -265,7 +265,7 @@ hiç bir parametre vermeden varsayılan ssh key üretme
 id_rsa oluşturacak
 
 Öncelikle böyle bir dosyamızın olmadığından emin olalım.
-yoksa üzerine yazacak ve daha önce girdiğimiz sunuca
+yoksa üzerine yazacak ve daha önce girdiğimiz sunucuya
 giremeyeceğiz
 
 Birisi ssh key imizi çalarsa passphrase key imizi bilmeden
@@ -404,7 +404,7 @@ ed25519 public key daha kısa ve daha güvenli
 
 copyalandı. Sunucuya bağlanıp denerim.
 
-.ssh$ root@172.105.7.26
+.ssh$ ssh root@172.105.7.26
 
 parola gir.
 

@@ -1,0 +1,427 @@
+https://www.youtube.com/watch?v=3FKsdbjzBcc
+
+> Making sure you have OpenSSH installed
+> Basic OpenSSH server configuration
+> Making an initial SSH connection
+> Using keys & a config file to configure SSH
+
+#############
+Section 1:
+#############
+
+Is SSH installed? (probably)
+
+$ ssh -V
+OpenSSH....  (output) demek ki kurulu
+
+############
+Section 2:
+############
+
+Configuring the server
+
+shhd (secure shell deamon) düzgün çalışıp çalışmadığına bakacağız
+
+Do this on your server,
+not your local computer
+
+$ sudo systemctl status sshd
+
+Loaded: load (/user.....)
+Active: active (running)
+yeşil renkte etkin ve çalışıyor yazıyorsa her şey yolunda
+
+$ sudo systemctl status sshd
+
+Unit sshd.service could not be found. (this means it isn't running)
+
+! Eğer servis (hizmet) çalışmıyorsa uygun paket bulunup kurulmalıdır.
+
+Bu paket ubuntu, almaLinux ve diğer bir çok dağıtımda
+openssh-server      paketidir.
+
+Do this on your server,
+not your local computer
+
+ubuntu
+$ sudo apt install openssh-server
+
+AlmaLinux
+$ sudo dnf install openssh-server
+
+Kurulumu yaptıktan sonra server'da (remote computer)
+sshd durumunu tekrar kontrol et.
+
+sunucudayım yine
+$ sudo systemctl status sshd
+
+Active : active (running)  olmalı
+
+Eğer etkin değilse etkinleştirmeliyiz.
+Boot (ilk başlangıçta da) çalışması için etkinleştirmeliyiz
+
+sunucu
+$ sudo systemctl start sshd
+
+Boot esnasında etkin olması için
+
+$sudo systemctl enable sshd
+
+sunucudan IP adresini ve kullanıcı adını almalıyım
+
+IP adress
+$ ip a
+$ hostname -I
+$ ifconfig -a
+
+Username
+$ whoami
+
+############
+Section 3:
+############
+
+Connection via SSH
+
+The SSH command basic syntax ha a single required
+parameter: the *host*. That's the IP adress,
+
+The host is commonly:
+> An IP address
+> A hostname
+> A domain name
+
+$ ssh 123.45.67.89 <---- Host(destination)
+
+ssh kullanırken bağlanacağımız yerin yani
+Sunucumuzun kullanıcı (adı yerine ana bilgisayarın)
+adını yazmalıyız
+
+vkc@192.168.170.24
+vkc <-- this is my current local username, not my
+        username on this server
+
+Do this on your server,
+not your local computer
+
+$ whoami
+vkc <---- User name
+
+$ hostname -I
+192.168.170.24 <---- IP address
+
+local computer
+$ ssh vkc@192.168.170.24
+vkc <-- Server user name (sunucu kullanıcı adı)
+192.168.170.24 <-- Server IP address (sunucu IP adresi)
+
+eğer daha önce bu sunucuya hiç bağlanmadıysak bize
+bu sunucuya güvenip güvenmediğimizi soracak
+eğer güveniyorsak evet dersek fingerprint ekleyecek
+
+########### başka yerden alıntı ##########
+fingerprint'i nereye ekliyor?
+
+ana makinemizde ~/.ssh altında known_hosts dosyasına ekliyor.
+fingerprints buraya ekleniyor ve bir dahaki girişimizde
+bize sorulmuyor. Dosyayı silip tekrar girmeyi deneyelim.
+Bakalım neler olacak.
+
+known_hosts dosyasının içinde sunucunun IP adresinin
+başladığı satırları silip ana makineden sunucuya
+tekrar bağlanmak istediğimizde bize tekrar fingerprints
+kaydedilsinmi diye soracak ve sordu.
+
+############alıntı bitti Veronica'ya devam########
+
+fingerprint
+Bir daha ki bağlanmada doğru makine olduğunu doğrulamak
+için kullanılıyor.
+
+###############
+Section 4:
+###############
+
+Secure access with keys!
+
+Şu an sunucuya her bağlandığımızda bize şifre soruyor.
+
+Anahtar tabalı yetkilendirmeyi kullanıp
+şifre doğrulama tabanlı yetkilendirmeyi etkinsizleştirmek
+daha güvenli. Hacker saldırılarına karşı güvenlik bir
+nebze daha arttırılmış olur.
+
+How it works in nutshell:
+
+your computer generates a pair of keys, a "public key"
+and a "private key".
+These two keys are basically cryptographically "matched"
+to each other. The "public key" is uploaded to the server,
+while your private key remains hidden safely on your computer.
+when you sign into your server, the private key comfirms
+you are who you say you are, and you're able to sign in.
+
+this is my computer and not my server
+şu an ana bilgisayarımda çalışıyorum, sunucuda değil.
+
+$ ssh-keygen -t ed25519 -f ~/.ssh/[filename] -C "[useful comment]"
+
+let's break it down
+
+ssh-keygen  çalışan program
+
+-t ed25519  ed25519 algoritma tipi ile anahtarımızın şifreleneceğini belirtiyoruz.
+
+şu an güncel ve gündelik sunucu kullanımında en iyi şifreleme algoritması diye biliriz bizim işimizi görür.
+
+-f ~/.ssh/[filename]    -f, ssh-keygen'e public ve private anahtar dosyalarını
+nereye kaydetmesi gerektiğini söyler.
+[] köşeli ayraçlar(parantezler) isteğe bağlıdır. Sen istemediğin sürece kullanmak zorunda değilsin.
+Biz burada home(yuvam) dizini altında gizli olan .ssh
+dizini içerisine vereceğimiz bir ad eğer verirsem kaydetmesini söyledik.
+
+Önerilen
+her sunucuya farklı bir public(halkaaçık anahtar) key
+ve private(kişiye özel anahtar) key kullanmaktır.
+
+-C  yorum eklemek için basit bir şekilde anahtarının
+açıklamısını içerir.
+Burada da köşeli ayrıca(kare paranteze ) gerek yoktur
+isteğe bağlıdır istersen kullanırsın.
+
+Şimdi bir deneme yapalım.
+ana bilgisayarım
+$ ssh-keygen -t ed25519 -f ~/.ssh/almaplay -C "vkc vtop"
+
+Önerilen:
+uzak sunucuya bağlanırken passphrase key kullanmak.
+
+~$ ls .ssh
+
+Yeni oluşturulan
+almaplay        <--- a private key!
+almaplay.pub    <--- a public key!
+
+Şimdi "public key" i sunucuya gönderdiğimizde bir anlam kazanacak
+
+ssh-copy-id     komutu burada bize kolaylık sağlayacak
+
+ssh-copy-id     command takes the locally-generated key,
+and configures the remote ssh server to use it to
+authorize your user login.
+
+ana makine
+~$ ssh-copy-id -i .ssh/almaplay.pub vkc@192.168.170.23
+
+ssh-copy-id     the program we're running
+                Çalıstırdığımız program
+
+-i .ssh/almaplay.pub    "i" followed by the filepath
+says we want to use this specific identity file, or
+key,("public key") to access this server
+
+vkc@192.168.170.23      we specify the user and hostname,
+just like we do with a password-based ssh session.
+aynı parola ile ssh oturumuna girerken yaptığımız gibi
+
+Kopyalama işlemini tamamladıktan sonra ssh komutu ile
+sunucuya tekrar bağlanalım.
+if we run the SSH command again, now you'll see it
+asks me to unlock the key.
+In most mainstream Linux desktops with default terminal settings, it'll usually save this key to the
+keychain. That's convenient as you won't need to
+insert the passphrase each time.  16:26/22.59 dk:sn
+
+!! You can also load the key-passphrase into ssh-agent,
+but that's a longer topic for another video. That's a
+great way to manage keys on non-Linux OSes. !!
+
+~$ ssh vkc@192.168.170.23
+
+açılan kutuya passphrase şifreni gir. sol alt köşedeki
+kutuya tik at ve tamamdır.
+
+!! Sparky linux'de çıkmadı her defasında şifre istiyor.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+############LearnLinuxTV############# alıntı
+spark linux'de sifre isteyen kutucuk çıkmadı
+ssh-agent i kullanacağım.
+
+Ana Bilgisayar
+
+ssh-agent'i kullanarak şifreyi bir kere girip bir daha
+girmeyeceğim
+
+ev dizinine geçti
+~$ ps aux | grep ssh-agent
+
+şayet çalışıyorsa gözükür.
+şimdi aslında nasıl başlatacağımıza bakalım.
+
+eval "$(ssh-agent)"
+Agent pid 26815  (gibi bir çıktı verdi.)
+
+ps aux | grep ssh-agent
+
+ssh-agent başlattığımız için kesin yakalayacak.
+aynı id ile
+
+$ ssh-add ~/.ssh/acme_id_ed25519
+şifre ister girerim
+
+Şimdi tekrar Sunucuya(server) bağlanalım.
+
+$ ssh root@172.105.7.26
+
+şifre sormadan sunucuya bağlanır.
+Sunucudan çıkıp tekrar ana bilgisayara geçelim
+
+Çalıştı ana bilgisayardaki "private key" ssh-add ile
+eklenir
+
+ssh-add ~/.ssh/"private key"
+
+Ana Bilgisayar 1:00:48
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#############################
+
+Şifre sormayı etkisizleştir.
+
+Do this on your server,
+not your local computer
+Sunucuda çalış
+
+[vkc@almaplay ~]$ sudo nano /etc/ssh/sshd_config
+
+#PasswordAuthentication yes
+Biz bunun "no" olmasını istiyoruz.
+PasswordAuthentication no
+!! nano da undo alt+u ile yapılır
+
+#PubkeyAuthentication yes
+* only change PubkeyAuthentication if it's
+explicitly set to "no" - that's pretty rare
+
+PubkeyAuthentication'ı yalnızca şu durumlarda değiştirin:
+açıkça "hayır" olarak ayarlanmış - bu oldukça nadirdir
+
+Bende böyle ayarlı
+#PermitRootLogin prohibit-password
+eğer böyle ayarlıysa
+#PermitRootLogin yes
+yorumu kaldır "no" diye ayarla
+PermitRootLogin no
+
+Bu ayarlar sunucuda yapıldı.Ayarlar yapıldıktan sonra
+sshd ye tekrar başlatmamız gerekiyor.
+
+Do this your server,
+not your local computer
+
+After doing this on the server, we'll need to restart
+the ssh daemon, which we can do with
+
+[sunucu~]$ sudo systemctl reload sshd
+           sudo systemctl daemon-reload (sparky linux)
+
+(systemd olduğu için systemctl )
+
+Now, if we attemp to sign into our server from another
+client computer that doesn't have the SSH key configure, you'll see that the access is denied!
+
+This takes care of a lot of the security concerns with
+operating a server over OpenSSH, but there's even
+more to do in production.
+
+Examples include changing the SSH port away from the
+default of 22, and, as I've been told so many times
+on Twitter, using a tool such as fail2ban to reject
+IPs that attemp to brute force their way into your
+server. Don't forget to let me know if you want me to
+cover that in a future video. :) umarız videoyu çeker
+
+**************
+ssh config
+
+Ana bilgisayar, Client Computer, Local Computer
+
+vkc@vtop:~$ nano .ssh/config
+
+(burada sudo ya ihtaç yok)
+"Host" is unique name we're going to give this server
+This is a convinient shorthand name we can use to
+streamline things for ourselves
+    vkc@almaplay
+    User@Host
+
+Host almaplay
+
+!! Don't forget to indent! It'll make your life easier
+When you have more than one host listed in this file!
+
+    HostName 192.168.170.23
+    IdentityFile
+
+HostName sunucumun IP adresi
+The "IdentityFile" is the location of the private key
+we use. In my case, it's at the location
+`~/.ssh/almaplay`.
+
+private key i başka bir dosyanın içinde oluşturmuş
+ya da taşımışsam IdentityFile ile bunu belirte bilirim.
+
+    User vkc
+
+    user, remote server name, sunucumun adı.
+    vkc@almaplay  burada sunucunun adını
+    vkc@vtop      ana bilgisayarın
+just as before, in nano, we type ctrl-x to exit, and
+then "Y" to save, and then overwrite the file. And
+when we're finish, we should press enter.
+
+Özet olarak yazacak olursak.
+
+Host almaplay
+    HostName 192.168.170.23
+    IndentityFile ~/.ssh/almaplay
+    User vkc
+
+ctrl-x, after "Y"
+F3,enter, after F2, enter
+
+Bir dahaki bağlantımızda yalnızca
+
+$ ssh almaplay
+
+yazmamız ve enterlamamız yeter
+!! Burada Host a vereceğimiz adın bir önemi yoktur
+istediğimiz adı verebiliriz.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
