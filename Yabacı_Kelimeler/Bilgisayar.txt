@@ -1,2 +1,13 @@
 1 	Common Usage 	component n. 	bileşen
 2 	Common Usage 	component adj. 	(tamamlayıcı) parça
+
+you might find this discrepancy confusing
+bu tutarsızlığı kafa karıştırıcı bulabilirsiniz.
+
+daemons      arka plan programları
+
+The sort command reorders the lines of a file into ascending order (the
+default)
+
+Sort komutu, bir dosyanın satırlarını artan düzende yeniden sıralar (
+ varsayılan)
