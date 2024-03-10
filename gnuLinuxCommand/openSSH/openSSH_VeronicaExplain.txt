@@ -399,7 +399,7 @@ yazmamız ve enterlamamız yeter
 !! Burada Host a vereceğimiz adın bir önemi yoktur
 istediğimiz adı verebiliriz.
 
-
+https://docs.gitlab.com/ee/user/ssh.html
 
 
 
