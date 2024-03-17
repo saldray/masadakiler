@@ -1,0 +1,16 @@
+ascend      to move up or to a higher position
+            yükselmek, yukarı çıkmak, tırmanmak
+
+ascendancy  yükselme, tırmanma, güce ulaşma, başarıyı yakalamak
+descend     to move or go down
+            alçalmak, inişe geçmek
+            inmek, alçalmak
+
+increase    art(ır)mak, çoğal(t)mak
+
+decrease    azaltma, azaltmak; düşmek, düşürmek
+
+increment   artma, artış, zam
+
+decrement   a reduction; a lower level or amount
+            azaltım, eksilme, azaltma
