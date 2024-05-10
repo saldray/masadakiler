@@ -11,3 +11,48 @@ default)
 
 Sort komutu, bir dosyanın satırlarını artan düzende yeniden sıralar (
  varsayılan)
+
+
+pointee
+
+pointee
+English
+Noun
+(en noun)
+(computing) The data or object referenced by a pointer.
+(bilgi işlem) Bir işaretçinin referans verdiği veri veya nesne.
+(bilgi işlem) Bir işaretçi tarafından referans verilen veri veya nesne.
+(hesaplama) Bir işaretçi tarafından başvurulan veri veya nesne.
+Anagrams
+*
+
+
+çevrik kelime, evirmece
+
+anagram
+isim, Fransızca anagramme
+
+Bir kelimedeki harflerin yerleri değiştirilerek elde edilen kelime:
+      Bakla kelimesinin anagramı ablaktır.
+
+
+
+https://dictionary.cambridge.org/dictionary/english-turkish/anagram
+
+a word or phrase made by putting the letters of another word or phrase in a different order
+bir kelimenin harflerini kullanarak başka bir kelime üretme, çevrik söz, ifade, anagram
+'Team' is an anagram of 'meat'.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
