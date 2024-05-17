@@ -1,0 +1,27 @@
+Host (Başlatmak istediğim ad. $ ssh verilen_ad)
+  Hostname (makine için ip adresi, site için gitlab.com)
+  PreferredAuthentications (genel, halka açık anahtar)
+  IndentityFile ~/.ssh/(gizli,güveli şifre)
+  User (whoami ile alınan ad)
+
+
+
+Host saldray
+	Hostname gitlab.com
+	PreferredAuthentications ed25519_gitlab.pub
+	IdentityFile ~/.ssh/ed25519_gitlab
+
+
+# Saldray_github
+
+Host saldrayHub
+	Hostname github.com
+	PreferredAuthentications ed25519_github.pub
+	IdentityFile ~/.ssh/ed25519_github
+
+
+
+Host pardus
+     HostName 192.168.122.242
+     IdentityFile /home/Saldray/.ssh/pardus
+     User saldray
