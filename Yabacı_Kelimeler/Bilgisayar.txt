@@ -44,6 +44,21 @@ bir kelimenin harflerini kullanarak başka bir kelime üretme, çevrik söz, ifa
 'Team' is an anagram of 'meat'.
 
 
+a reduction in price
+indirim, fiyat düşürme, iskonto
+They offer a 10 percent discount on rail travel for students.
+discount
+verb [ T ]
+uk
+/dɪˈskaʊnt/ us
+IGNORE
+to ignore something because you do not believe that it is true or that it will happen
+ehemmiyet vermemek; hesaba katmamak, dikkate almamak; önemsememek
+You shouldn't discount the possibility of him coming back.
+REDUCE
+to reduce the price of something
+fiyatını düşürmek, indirim yapmak
+discounted goods/rates
 
 
 
