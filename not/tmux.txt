@@ -41,3 +41,58 @@ If you press Ctrl+B, and then double quotation marks (""), you split the window 
 Ctrl+B x close
 
 If you press Ctrl+B, and then the percentage sign (%) it splits the current pane vertically.
+
+
+
+tmux new -s(ession) name
+
+ctrl+b  c  yeni pencere
+
+ctrl+b  n(ext), p(revious) or 0..9
+
+
+
+
+tmux new -s saldıray (sezon aç)
+
+ctrl+b d  (ayır, tmux arka planda çalışır halde kalır)
+
+normal terminaldesin tekrar bir sezon aç
+
+tmux attach -t(terminal no)
+
+tmux new -s yeni_sezon
+
+ctrl+b s  (sezonları görebilirsin)
+
+ctrl+b ,  rename current window
+
+
+
+ctrl+b d(eattach)
+
+tmux attach -t(terminal) ad ya da no
+
+
+kopyalama ile grafiksel arayüzden fare olmadan kopyalama için
+
+ctrl+b [ (emacs tuş dizilimi ile istediğim yere git)
+ctrl+space  (istediğim yeri seçiyorum)
+ctrl+w   (kopyalıyorum)
+
+ctrl+b ] (yapıştırma için)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
