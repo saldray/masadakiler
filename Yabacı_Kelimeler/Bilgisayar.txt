@@ -60,11 +60,12 @@ to reduce the price of something
 fiyatını düşürmek, indirim yapmak
 discounted goods/rates
 
+http://lacriment.com/2019-02-03/fonksiyonel-programlama-3-lispe-giris
+Yani Lisp yordamlar -kod- ile veri
+süreçleri (process) betimleme yolu, yani yordamların (procedure) veri (data)
+fonksiyonuna bir değer (argüman) vererek
 
-
-
-
-
+Birden Çok Argüman (Currying)
 
 
 
