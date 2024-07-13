@@ -68,6 +68,116 @@ fonksiyonuna bir değer (argüman) vererek
 Birden Çok Argüman (Currying)
 
 
+http://lacriment.com/2019-02-01/fonskiyonel-programlama-1-lambda-kalkulus-1
+
+Lambda kalkülüs (λ-Kalkülüs, Lambda Calculus) fonksiyonları soyutlama (abstraction), bağlama (binding), uygulama (application) ve ikame etme (substitution) kavramları üzerine kurulu bir hesaplama modelidir.
+
+Fonksiyon girdisinin çıktıya nasıl eşlendiğini (mapping) f’e 6 değerini uygulayarak, 6+1=7 olarak anlıyoruz
+
+ifadeler (expression), değişkenler (variable) ve soyutlama (abstraction)
+
+isimsiz fonksiyonlardır (anonymous function)
+
+Bu ifadeleri ıraksak (divergent) olarak nitelendiriyoruz.
+
+değer x’in yerine geçecektir (substitution):
+
+Yaygın Kullanım 	substitution i. 	yerine koyma
+yer değiştirme
+ikame, ikame etme
+
+tdk
+ikame etme
+
+ikame
+(ika:me), Arapça iḳāme
+
+1. isim Bir şeyi başka bir şeyin yerine koyma, yerine kullanma.
+
+2. isim Ayağa kaldırma, ayakta durdurma.
+
+3. isim Ortaya koyma, meydana çıkarma.
+
+4. sıfat Yerine konulan, yerine geçen.
+
+
+ikame etmek
+
+1. yerine koymak.
+
+2. ayakta durdurmak:
+      Nöbetçi ikame etmek.
+
+3. ortaya koymak:
+      "Mahkeme bir Musevi'nin Ari ırka mensup biri aleyhine ikame ettiği davayı kabule yanaşmıyor." - Refik Halit Karay
+
+
+nosyon
+isim, felsefe, Fransızca notion
+
+► kavram.
+
+mefhum
+isim, eskimiş, felsefe, (mefhu:mu), Arapça mefhūm
+
+► kavram:
+      "Dürüst bir insan, inansa da inanmasa da mefhumları yerli yerinde kullanmak borcundadır." - Necip Fazıl Kısakürek
+
+
+
+syntax                        sözdizimi, sözdizimsel
+semantics                     anlambilimi
+lexical                       sözcüksel
+Implementing Subprograms      Alt Programları Uygulama
+concurrency                   eşzamanlılık
+Exception Handling and Event Handling     İstisna işleme ve Olay işleme
+function cosposition          fonksiyon birleşimi
+referential transparency      referans şeffaflığı
+read-eval-print-loop          okuma-değerlendirme-yazdırma-döngüsü
+eval                          değerlendirme, yorumlama
+literals                      değişmezler (kendi kendilerine değerlendirir)
+numeric predicate functions   sayısal dayanak fonksiyonları
+predicate function            dayanak fonksiyonları
+predicate function            yüklem fonksiyonu
+type inferencing              tür çıkarımı
+complex syntax                karmaşık sözdizimi
+concurrency                   eşzamanlılık
+simple semantics              basit anlambilimi
+simple syntax                 basit sözdizimi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
