@@ -124,6 +124,7 @@ isim, eskimiş, felsefe, (mefhu:mu), Arapça mefhūm
       "Dürüst bir insan, inansa da inanmasa da mefhumları yerli yerinde kullanmak borcundadır." - Necip Fazıl Kısakürek
 
 
+map                           bindir, tüm(ün) herbirine.
 
 syntax                        sözdizimi, sözdizimsel
 semantics                     anlambilimi
@@ -145,17 +146,36 @@ concurrency                   eşzamanlılık
 simple semantics              basit anlambilimi
 simple syntax                 basit sözdizimi
 
+ilişkili diziler (associative array)
+
+obstacle
+something that makes it difficult for you to go somewhere
+or to succeed at something
+engel, mâni
+
+obstacle i.       engel
+The two countries overcame all obstacles to cooperation.
+İki ülke işbirliğinin önündeki tüm engellerin üstesinden gelmiştir.
+
+More Sentences
+They came across many obstacles on the path.
+Yolda birçok engelle karşılaştılar.
+
+More Sentences
+This is a prerequisite for the industry, not an obstacle that has to be overcome.
+Bu, aşılması gereken bir engel değil, sektör için bir ön koşuldur.
 
 
+I sent a letter saying if I'm the father of open source it was conceived through artificial insemination using stolen sperm without my knowledge or consent
+
+Açık kaynağın babasıysam, bilgim veya onamım olmadan çalıntı sperm kullanılarak suni tohumlama yoluyla hamile kalındığını söyleyen bir mektup gönderdim.
 
 
+https://www.youtube.com/watch?v=7foCbOktTZM
+dakika ve saniye 24:58
 
-
-
-
-
-
-
+Tokens      jeton veya belirteç
+            denen küçük parçalara ayırıyoruz.
 
 
 
