@@ -42,7 +42,7 @@ Protocal  : Teşrifat
           :* Uyulması gereken kurallar kümesi.
           :** Bilgisayar bilimleri açısından protocoller (teşrifatlar)
           genelde iki veya daha fazla taraf için yapılması
-          gereken bir duzu is belirtir.
+          gereken bir dizi işi belirtir.
 
 
 
@@ -80,8 +80,8 @@ $ git clone https:githup.com/username/....
 
 git status      (durum hakkında bilgi alıyoruz)
 git log         (verilen commitleri görürüz)
-                (commit: to perform; to do : yapmak,(suç cinaye)
-                işlemek)
+                (commit: to perform; to do : yapmak,(suç cinayet)
+                işlemek, taahhüt etmek)
 
 # masaüstünde localde(yerelde) indirdiğim dizinin içerisindeki bir
 # dosyada değişiklik yapayım. Değişiklik yapıldıktan sonra
@@ -122,3 +122,199 @@ git branch -M main   (git "master" branch (dalında) ında çalışır.
                       değişiklikleri daha sonradan github'a, remote repo'ya
                       gönderdiğimizde sorun yaşamamak için git'i "master"dan
                       "main" branch'ına geçiriyoruz.)
+
+
+
+https://www.youtube.com/watch?v=84KYa_eaqWg&list=PL7r5fuxs-gge09wQA9RWGGoOBuuW7KBT7&index=2
+ilk  olarak komut satırından repository (depo) oluşturmak için yapmamız gereken
+
+ve ilk push lamada yapılacak olan
+****************
+git push --set-upstream origin master
+****************
+
+…or create a new repository on the command line
+
+echo "# my-project" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:saldray/my-project.git
+git push -u origin main
+
+…or push an existing repository from the command line
+
+git remote add origin git@github.com:saldray/my-project.git
+git branch -M main
+git push -u origin main
+
+
+***********************************
+https://medium.com/@cihanloyan/git-branching-dallanma-nedir-9b3f50132da1
+***********************************
+
+yeni branch açma
+git branch feature/1
+
+Yeni bir dal oluşturuldu. Listelemek için
+
+git branch               (yazıyorum)
+
+Kendi açtığım branch geçmek için
+
+git checkout feature/1
+
+feature/1 adlı dalın içinde değişiklik yaptım 'touch style.css'
+master'ın içinde bir değişiklik yok
+
+git checkout master
+
+master'ın içine giriyorum  ls ile bakınca sadece index.html var.
+
+şimdi merge ile birleştirmem lazım
+
+Hangi branch deki değişiklikleri master branch e eklemek istiyorsak
+master branch in içinde olmalıyız
+
+git merge --no-ff feature/1
+
+
+feture/1 de bir dallanma yaptım bugfix/1 diye
+burada bir düzeltme yapıp master ın içinde iken merger ile birleştirme yapacağım
+varsayılan mesajın çıkmaması için merge in mesajını şöyle yapabilirim.
+
+git merge --no-ff -m "Merge Message" bugfix/1
+
+
+
+************************
+git reset (commit silme) soft, mixed, hard eğitim #4
+************************
+
+
+mkdir git-reset
+
+cd git-reset
+
+-local repository haline getirmek için
+
+git init
+
+misal touch first-file.txt oluşturdum.
+şu an çalışma alınımda ben bunu stage area ya atmak için
+
+git add first-file.txt   ile stage-area ya gönderirim
+
+git commit -m "commit mesajı"
+
+yapılan bir commit'i geri almak için
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+git commit -m "first commit"
+
+
+git reset --soft <adres>  stage area geri alır
+
+git reset --mixed <adres> workstation or working tree çalışma alanına geri alır.
+
+git reset --hard <adres>  git init başlangıç alanından bile çıkar
+
+*****************************
+git revert commit geri alma
+*****************************
+
+   ---- working directory
+   |
+git add
+   |
+   |--- staging area ----|
+                         |
+                      git commit
+                         |
+        repositor    ----|
+
+
+
+
+                          --mixed
+          ______________________________
+          |                            |
+   ______ |
+   |     |                             O
+  _____  |                             |
+  |    | |  ---------> O ----------->  O
+  |    |_|                             |
+  |____|                               O
+  working           staged           commit
+  directory         snapshot         history
+                             |            |
+                             |____________|
+                                 --soft
+|                                          |
+|__________________________________________|
+                                 --hard
+
+
+
+********************************
+      git stash
+********************************
+
+git stash -m "stash message"
+
+git stash list
+
+git stash pop
+
+git stash pop {index}
+
+git stash apply {index}
+
+git stash drop {index}
+
+git clear
+
+
+Daha tam commit lemeye hazır hale gelmediyse
+o branch de çalışırken başka bir işe geçmemiz gerektiğinde
+iş daha commitlenme aşamasına gelmedi. commitlenecek durumda
+değil Başka bir branca geçip düzeltmeler yapmam gerektiğinde
+bulunduğum branch tam commitlenemeyecek durumda diğer branch da
+bir şeyler yapacaksak bulunduğumuz brach i değişikliklerini
+kaybetmemek için stashleme işlemi yapılır
+o an ki çalışma ağacımızın çalışma halini depolama alanına
+almış oluyoruz buna da stash lemek deniyor
+stash Saklamak anlamına geliyor
+
+şu anki kodumuzun o anki halini commitlemeden yine bir yerde
+kaydetmemizi barındırmamızı sağlıyor
+
+git stash pop
+veriyi getirdikten sonra stash listesinden siliyor
+
+git stash apply
+apply ise geri getirdikten sonra stash listten bu stash i silmiyor
+
+
+https://www.youtube.com/watch?v=qzUqdnIRmLc&list=PL7r5fuxs-gge09wQA9RWGGoOBuuW7KBT7&index=8
+************************************
+     git rebase
+Merge vs Rebase
+************************************
+
+rebase :
+yeniden temellendirmek
+
+
+
+
+
+
+
+
+
+
+
+

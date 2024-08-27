@@ -178,7 +178,9 @@ Tokens      jeton veya belirteç
             denen küçük parçalara ayırıyoruz.
 
 
+ you will soon become familiar with the function of this operator and will even learn to appreciate its succinctness
 
+  Yakında bu operatörün işlevine aşina olacak ve hatta onun kısa ve özlüğünü takdir etmeyi öğreneceksiniz.
 
 
 
