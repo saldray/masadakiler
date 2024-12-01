@@ -1,0 +1,6 @@
+ollama list
+  105  ollama run llama3.1:8b
+  106  ollama run dolphincoder:7b
+  107  ollama run llama3.1:8b
+  108  ollama show system
+  109  ollama run llama3.1:8b
