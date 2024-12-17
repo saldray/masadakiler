@@ -107,6 +107,45 @@ Tüm oturumları sonlandırmak
 tmux ls | grep : | cut -d. -f1 | awk '{print substr($1, 0, length($1)-1)}' | xargs kill
 
 
+screen kullanımı
+
+ctrl+a w    pencereleri gösteriyor
+ctrl+a c    bash ile başlayan pencere oluşturur
+ctrl+a 0    0,1,2,,, pencereler arasında geçiş yapmamızı sağlıyor
+
+$top
+ctrl+a d    deattach screen
+screen -dr  -r reattach
+ctrl+a c    create a new window
+$dmesg -w
+
+ctrl+a c    yeni pencere açara 
+ctrl+a w    açık olan pencereleri görüntüler ve hangi pencerede olduğunmu * gösterir
+ctrl+a 0,1,2...  açık olan pencereler arasında geçiş yaparım
+ctrl+a "    açık olan pencereleri bana liste olarak gösterir.
+ctrl+a ?    çıktıya bakarak ekrana yazabilirsin.
+ctrl+a :    remove yazabilirsin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
