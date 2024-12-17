@@ -82,14 +82,29 @@ ctrl+w   (kopyalıyorum)
 
 ctrl+b ] (yapıştırma için)
 
+https://www.youtube.com/watch?v=aS8tavWtDiA
+https://tr.wikipedia.org/wiki/Tmux
 
+ctrl+b z
+ekranı üçe böldük diyelim ctrl+b z ile bulumduğum pencereyi tam ekran yapabiliyorum
+aynı şekilde tekrar eski haline getirebiliyorum. ctrl+b z
 
+ctrl+b o çerçeveler arasında geçiş yapıyorum
+ctrl+b q ardından çerçerve numarası (frame)
+ctrl+b c yeni pencereler açar
+ctrl+b " mevcut pencerede yatay bir çerçeve açar
+ctrl+b % mevcut pencerede dikey bir çerçeve açar
+ctrl+b & pencereler kapatılır.
+ctrl+b , pencerelere yeni ad verilir.
+ctrl+b { çerçeveler taşınır
+ctrl+b } çerçevenin konunmu değiştirilir
 
+tmux ls oturumları listelemek
+Belirtilen oturumu sonlandırmak
+tmux kill-session -t oturum-adı
 
-
-
-
-
+Tüm oturumları sonlandırmak
+tmux ls | grep : | cut -d. -f1 | awk '{print substr($1, 0, length($1)-1)}' | xargs kill
 
 
 
