@@ -308,7 +308,15 @@ rebase :
 yeniden temellendirmek
 
 
+******
+Başka bir oturumda işletim sisteminde git reposunda yaptığım değişikliği
+Daha sonra başka bir işletim sisteminde açtığım oturumdaki github ya da gitlab
+reposuna (deposuna) eşitlemek için
 
+git fetch #ardından
+git push  # yaparak değişiklikleri güncellerim
+
+****
 
 
 
