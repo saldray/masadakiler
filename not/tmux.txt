@@ -128,6 +128,16 @@ ctrl+a :    remove yazabilirsin
 
 
 
+https://linuxier.com/how-to-adjust-pane-sizes-in-tmux/
+
+TL;DR
+
+To adjust Tmux pane size, you can follow these steps:
+
+    Press Ctrl+b to enter Tmux command mode.
+    Hold Ctrl and press the arrow keys (up, down, left, right) to resize the pane in the desired direction.
+
+Read the guide below to discover three different methods to adjust pane sizes in tmux and know about some common errors with solutions.
 
 
 
