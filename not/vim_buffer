@@ -1,1 +1,39 @@
 https://linuxhandbook.com/vim-buffers/
+
+":tabnew" command open a new tab.
+
+:tabnew komutu ile açılan [No Name] buffer'ına ad vermek için
+:e[dit] <istenen ad>  ad verilebilir
+:b	or :buffers   istenen buffer'ı değiştirmek için
+
+yan yana açılan pencerelerde geçiş yapmak için.
+
+gt or :tabnext	     sonraki pencereye geçer.
+gT or :tabprevious   önceki pencereye geçiş yapar.
+
+:tabclose or :q	     pencereyi kapatmak için
+
+:tabmove N     	     pencerenin yerini değiştirmek için N 0 ilk konuma taşır
+:tabmove 0	     ilk konuma taşır.
+
+Bölünmüş iki farklı pencere varsa bunların arasında geçiş yapmak için
+
+Ctrl+w w,W
+
+Bölünmüş iki pencereden imlecin bulunduğu pencerenin konumunu değiştirmek için
+
+Ctrl+w r,R
+
+
+Çerçeve içindeki bölünmüş pencereler arasındaki geçiş için
+Ctrl+w w,W
+
+Yan yana çerçeveler arasında geçiş yapmak için yani tab lar arasında
+gt ya da :tabnext
+gT ya da :tabprevious
+
+
+Ctrl + w, H moves the current window to the leftmost part of the screen
+Ctrl + w, J moves the current window to the bottom of the screen
+Ctrl + w, K moves the current window to the top of the screen
+Ctrl + w, L moves the current window to the rightmost part of the screen
