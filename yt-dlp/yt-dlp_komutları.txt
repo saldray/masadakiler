@@ -1,0 +1,54 @@
+* sadece videodan alt yazı indirmek için
+
+yt-dlp --skip-download --write-auto-sub --sub-lang en --convert-subs srt URL
+
+* Bir çalma listesinin ilk 10 videosunu indirme:
+
+yt-dlp --playlist-start 1 --playlist-end 10 [YouTube URL'si]
+
+** https://ostechnix.com/yt-dlp-tutorial/
+
+* en kaliteli videoyu 480 piksel veya daha düşük bir çözünürlükle indirmek için (480p'ye eşit veya daha az) bu komutu kullanın:
+
+yt-dlp -f "best[height<=480]" <URL>
+
+* mevcut en iyi formatı (hem ses hem de video) indirir, ancak 480p'den daha iyi değildir:
+
+yt-dlp -f 'bestvideo[height<=480]+bestaudio/best[height<=480]' <URL>
+
+* ulaşılabilir id biçimlerini listeleme
+
+yt-dlp --list-formats <URL>
+
+or
+
+yt-dlp -F <URL>
+
+* id'ye göre indirme
+
+yt-dlp -f id <URL>
+
+* Dosya uzantısına göre indirme
+
+yt-dlp --format mp4 <URL>
+
+kısayoldan
+
+yt-dlp -f mp4 <URL>
+
+* Bu dosyaları özel dosya adlarıyla kaydetmeyi tercih ediyorsanız, bunu aşağıdaki komutu kullanarak yapabilirsiniz
+
+yt-dlp -f mp4 -o '%(title)s.f%(format_id)s.%(ext)s' https://www.youtube.com/watch?v=t5b20oLaIaw
+
+* Çalma listesinden belirli bir videoyu indirmek için
+
+yt-dlp --playlist-items 20 <URL>
+
+* Çalma listesinden bir videonun ses dosyasını çıkarma
+
+yt-dlp --playlist-items 5 -x --audio-format mp3 https://www.youtube.com/playlist?list=PL9-8NdEyCHsckLR-152jR4KB1ex3nfTR6
+
+
+yt-dlp --playlist-items 2,3,7,10 <playlist_url>
+yt-dlp --playlist-start 2 --playlist-end 5 <playlist_url>
+yt-dlp --help
