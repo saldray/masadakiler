@@ -13,8 +13,16 @@ Programlama geçmişinize bakılmaksızın
 Ne olursa olsun
 Her şeye rağmen
 
+<<<<<<< HEAD
 
 Python_Object_Oriented_Programming_-_Edcorner_Learning
 class = draught (suppose an architectural drawing). The Object is a real item that was created using the "blueprint" (suppose a house). 
 
 sınıf = taslak (bir mimari çizim olduğunu varsayalım). Nesne, “plan” kullanılarak oluşturulmuş gerçek bir öğedir (bir ev olduğunu varsayalım). 
+=======
+https://www.youtube.com/watch?v=BgZHbCDFODk
+tam yeri 1 dk: 13 sn
+
+1 	Phrasals 	hit someone (up) for something v. 	birinden bir şey istemek
+2 	Phrasals 	hit someone (up) for something v. 	birinin bir şey için (yardım, destek) başvurmak
+>>>>>>> 9738f0b (hit me up birinin bir şey için (yardım, destek) başvurmak)
