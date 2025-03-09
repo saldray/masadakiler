@@ -52,3 +52,42 @@ yt-dlp --playlist-items 5 -x --audio-format mp3 https://www.youtube.com/playlist
 yt-dlp --playlist-items 2,3,7,10 <playlist_url>
 yt-dlp --playlist-start 2 --playlist-end 5 <playlist_url>
 yt-dlp --help
+
+
+To download a 1080p video with the best audio stream:
+
+$ yt-dlp --format "bv*[height=1080]+ba/b" https://www.youtube.com/watch?v=r3eaGCk2Acs
+
+
+To download a video with resolution better than 1080p:
+
+$ yt-dlp --format "bv*[height>=1080]+ba/b" https://www.youtube.com/watch?v=r3eaGCk2Acs
+
+
+To specify the format to download subtitle:
+
+$ yt-dlp --write-subs en --sub-format json3 https://www.youtube.com/watch?v=r3eaGCk2Acs
+To embed subtitles into the video:
+
+$ yt-dlp --format "bv*+ba/b" --embed-subs --merge-output-format mp4 https://www.youtube.com/watch?v=r3eaGCk2Acs
+
+
+yt-dlp --format "bv*[height=1080]+ba/b" URL
+
+
+
+
+
+
+
+
+
+https://wiki.archlinux.org/title/Yt-dlp
+https://omicx.cc/posts/2022-08-30-install-and-usage-of-yt-dlp/
+
+
+
+
+
+
+
