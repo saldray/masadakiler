@@ -111,6 +111,27 @@ In essence, it’s common that you want to run seldom-used commands. To do this 
 Bu örneklerde "in essence" ifadesi, cümlenin ana fikrini veya en önemli noktasını vurgulamak için kullanılır. Bu, dinleyicilere veya okuyuculara, konunun temelini daha iyi anlamaları için yardımcı olur.
 
 
+pass it on : (mesajı) iletirim
+
+pass on
+— phrasal verb with pass verb
+uk
+/pɑːs/ us
+Add to word list
+to die
+geçip gitmek, vefat etmek, ölmek
+He passed on almost ten years ago.
+
+(Cambridge Yabancılar İçin Sözlük İngilizce-Türkçe'den pass onin çevirisi © Cambridge University Press)
+Translation of pass on | PASSWORD English–Turkish Dictionary
+pass on
+phrasal verb
+to give to someone else (usually something which one has been given by a third person)
+iletmek, vermek
+I passed on his message.
+to die
+ölmek
+His mother passed on yesterday.
 
 
 
