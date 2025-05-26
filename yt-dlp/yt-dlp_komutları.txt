@@ -74,16 +74,76 @@ $ yt-dlp --format "bv*+ba/b" --embed-subs --merge-output-format mp4 https://www.
 
 yt-dlp --format "bv*[height=1080]+ba/b" URL
 
-
-
-
-
-
-
-
-
 https://wiki.archlinux.org/title/Yt-dlp
 https://omicx.cc/posts/2022-08-30-install-and-usage-of-yt-dlp/
+
+
+
+
+
+
+yt-dlp -x --audio-format <format> <URL>
+
+Burada:
+
+    -x veya --extract-audio: Sadece ses dosyasını indirme seçeneğidir.
+    --audio-format <format>: İndirilecek ses dosyasının formatını belirtir (örneğin, mp3, aac, vorbis, m4a, opus, wav). best seçeneği en iyi kaliteyi seçer.
+    <URL>: İndirmek istediğiniz video veya oynatma listesinin URL'sidir.
+
+
+Bir oynatma listesindeki tüm videoların seslerini en iyi kalitede indirmek için:
+
+
+yt-dlp -x --audio-format best https://www.youtube.com/playlist?list=PLRqwXQIJ6vQWE3YYSupFR68PpAOEmx_9y
+
+
+yt-dlp ile ses dosyalarını indirmek için aşağıdaki komutu kullanabilirsiniz:
+Bash
+
+yt-dlp -x --audio-format <format> <URL>
+
+Burada:
+
+    -x veya --extract-audio: Sadece ses dosyasını indirme seçeneğidir.
+    --audio-format <format>: İndirilecek ses dosyasının formatını belirtir (örneğin, mp3, aac, vorbis, m4a, opus, wav). best seçeneği en iyi kaliteyi seçer.
+    <URL>: İndirmek istediğiniz video veya oynatma listesinin URL'sidir.
+
+Örnekler:
+
+    Bir YouTube videosunun sesini MP3 olarak indirmek için:
+    Bash
+
+yt-dlp -x --audio-format mp3 https://www.youtube.com/watch?v=dQw4w9WgXcQ
+
+Bir oynatma listesindeki tüm videoların seslerini en iyi kalitede indirmek için:
+Bash
+
+    yt-dlp -x --audio-format best https://www.youtube.com/playlist?list=PLRqwXQIJ6vQWE3YYSupFR68PpAOEmx_9y
+
+Ek seçenekler:
+
+    --audio-quality <quality>: Ses kalitesini belirtir. 0 en iyi kalite, daha yüksek değerler ise daha düşük kalitedir.
+    -o <template> veya --output <template>: Çıktı dosyasının adını ve konumunu ayarlamak için kullanılır. Örneğin:
+
+yt-dlp -x --audio-format mp3 -o "%(title)s.%(ext)s" https://www.youtube.com/watch?v=abcdefg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
