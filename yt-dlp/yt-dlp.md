@@ -144,8 +144,9 @@ Ek İpuçları
     yt-dlp --write-sub --embed-sub [oynatma_listesi_linki]
 
 
-
-
+youtube-dl --write-sub --sub-lang en --skip-download url
+youtube-dl --write-auto-sub --skip-download
+yt-dlp --write-auto-subs --sub-langs "tr-en"
 
 
 

@@ -183,6 +183,26 @@ Tokens      jeton veya belirteç
   Yakında bu operatörün işlevine aşina olacak ve hatta onun kısa ve özlüğünü takdir etmeyi öğreneceksiniz.
 
 
+transaction
+noun [ C ]
+  formal
+uk
+/trænˈzækʃən/ us
+Add to word list
+the buying or selling of something, or an exchange of money
+iş, işlem, muamele
+a business/financial transaction
+
+(Translation of transaction from the Cambridge Learner's Dictionary English–Turkish © Cambridge University Press)
+Translation of transaction | PASSWORD English–Turkish Dictionary
+transaction
+noun
+a particular piece of business; a business deal
+iş
+online financial transactions
+the act of transacting
+iş yapma
+The transaction of the deal took several days.
 
 
 
