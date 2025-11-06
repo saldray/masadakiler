@@ -128,9 +128,9 @@ Ek seçenekler:
 yt-dlp -x --audio-format mp3 -o "%(title)s.%(ext)s" https://www.youtube.com/watch?v=abcdefg
 
 
+yt-dlp --skip-download --write-subs --sub-langs en --sub-format srt
 
-
-
+yt-dlp --skip-download --write-auto-subs --sub-langs en --sub-format srt
 
 
 

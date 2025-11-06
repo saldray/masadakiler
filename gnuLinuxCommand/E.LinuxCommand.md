@@ -52,3 +52,4 @@
 
 >>Türkçe bir kelime olup, kökeni Arapça’dır. Ard kelimesi yer anlamına gelirken, arda kelimesi ise sıralı olarak anlamına gelmektedir. Bu nedenle ardarda kelimesi, yerlerin sıralı olarak takibi anlamına gelmektedir.
 
+`mkdir -p dir/{a,b,c} && touch dir/a/file{001..009}.txt dir/b/file{010..020}.txt dir/c/file{100..110}.txt`
