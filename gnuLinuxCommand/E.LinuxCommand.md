@@ -107,3 +107,89 @@ mkdir -p dir/c && touch dir/c/file{100..110}.txt
 This is essentially three separate command sequences run one after the other.
 
 Would you like to explore **other ways to create complex file structures** using loops or scripts?
+
+
+---
+
+
+
+
+
+
+Bu komut satırındaki **$|$ (boru)** ve **$;$ (noktalı virgül)** işaretleri, **kabuk (shell)** ortamında komutların yürütülme şekli ve sırası açısından **farklı** roller üstlenir.
+
+İşte her birinin işlevi:
+
+---
+
+### **$|$ (Boru - Pipe)**
+
+$|$ işareti, bir komutun **çıktısını** başka bir komutun **girdisine** yönlendirir. Buna **boru hattı (pipeline)** denir.
+
+* **İşlev:** Komutları birbirine bağlar, böylece veriler bir komuttan diğerine akar.
+* **Örnek:** `$ls | sort`
+    * **`ls`** komutu, dizindeki dosyaların listesini (çıktı) üretir.
+    * **`|`** işareti, bu listeyi **`sort`** komutunun girdisi yapar.
+    * **`sort`** komutu, girdiyi (yani `$ls` çıktısını) alır ve alfabetik olarak sıralayarak ekrana yazdırır.
+* **Sonuç:** İki komut **birbiriyle ilişkilidir** ve ikincisi, birincisinin verisini işler.
+
+---
+
+### **$;$ (Noktalı Virgül - Separator)**
+
+$;$ işareti, **ardışık komutları** birbirinden ayırır ve bunların **sırayla** çalıştırılmasını sağlar.
+
+* **İşlev:** Komutları birbirinden bağımsız olarak ayırır, her komut bir öncekinin tamamlanmasını bekler (çıktısını kullanmaz).
+* **Örnek:** `$ls | sort; echo "the contents of /tmp: "`
+    * Önce, `$ls | sort` **boru hattı** çalışır ve çıktıyı ekrana yazar.
+    * Bu işlem tamamlandıktan **sonra**, **`;`** işareti ile ayrılmış olan ikinci komut, `$echo "the contents of /tmp: "` çalışır ve tırnak içindeki metni ekrana yazdırır.
+* **Sonuç:** Komutlar **birbirinden bağımsızdır**; ikincisi, birincisinin çıktısını kullanmaz, sadece yürütülme sırasını belirler.
+
+---
+
+### **Özet Karşılaştırma**
+
+| Özellik | **$|$ (Boru / Pipe)** | **$;$ (Noktalı Virgül / Separator)** |
+| :--- | :--- | :--- |
+| **Bağlantı** | Bir komutun çıktısını diğerinin girdisine bağlar. | Komutları birbirinden ayırır, sırayla çalıştırır. |
+| **Veri Akışı** | Var (Veri bir komuttan diğerine akar). | Yok (Komutlar bağımsızdır). |
+| **Amaç** | Veri işleme, filtreleme ve dönüştürme. | Ardışık yürütme, birden fazla işi sırayla yapma. |
+| **Örnek Kullanım** | `ls -l | grep "txt"` | `cd /var/log; ls -l` |
+
+---
+
+### **Verilen Komutun Analizi**
+
+Komut: `$ls | sort; echo "the contents of /tmp: "`
+
+1.  **Grup 1 (Boru Hattı):** `$ls | sort`
+    * `ls` komutu listeyi üretir.
+    * `|` bu listeyi `sort` komutuna aktarır.
+    * **Sonuç:** Mevcut dizindeki dosyalar sıralanmış olarak ekrana basılır.
+2.  **Ayırıcı:** **`;`**
+3.  **Grup 2 (Bağımsız Komut):** `$echo "the contents of /tmp: "`
+    * Önceki grup tamamlandıktan sonra bu komut çalışır.
+    * **Sonuç:** "the contents of /tmp: " metni ekrana basılır.
+
+Bu komut, **sıralanmış dizin listesini** gösterdikten hemen sonra, **ekrana bir metin yazdırma** görevini yerine getirir.
+
+Başka bir komutun nasıl çalıştığını veya boru hattı ile ilgili daha fazla örnek ister misiniz?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -13,4 +13,4 @@ This behavior is extremely important to understand, especially as we delve into 
 
 Bu davranışı anlamak son derece önemlidir, özellikle de daha karmaşık komutları incelerken.
 
-pattern     örüntü
+pattern     örüntü desen

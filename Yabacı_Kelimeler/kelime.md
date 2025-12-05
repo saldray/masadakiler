@@ -278,13 +278,152 @@ an [indication](https://dictionary.cambridge.org/dictionary/english-turkish/indi
 ​                                    From the [Cambridge English Corpus](https://www.cambridge.org/gb/cambridgeenglish/better-learning-insights/corpus)
 
 
+Güzel bir soru 👍. “Respectively” İngilizcede sık kullanılan ama bazen kafa karıştıran bir kelime.  
+
+---
+
+## 📖 Anlamı
+**Respectively** = “sırasıyla” / “her biri için ayrı ayrı”  
+
+Bir listedeki öğelerin, başka bir listedeki öğelerle aynı sırada eşleştiğini belirtmek için kullanılır.  
+
+---
+
+## 📌 Kullanımı
+- **Cümle içinde:**  
+  - *Ali ve Ayşe 10 ve 12 yaşındalar, respectively.*  
+    → Ali 10 yaşında, Ayşe 12 yaşında (sırasıyla).  
+  - *The first, second, and third prizes went to John, Mary, and Alex, respectively.*  
+    → Birinci ödül John’a, ikinci Mary’ye, üçüncü Alex’e gitti.  
+
+- **Gramer açısından:**  
+  Genellikle cümlenin sonunda yer alır ve “önceki listeler arasındaki eşleşmeyi” gösterir.  
+
+---
+
+## 🧠 Nasıl Akılda Tutabilirsin?
+- **Kelime kökeni:** “Respect” → “saygı” değil burada, “ilişkilendirmek” anlamında.  
+- **Hafıza ipucu:**  
+  - “Respectively” = “sırasıyla” → “Her biri kendi sırasına saygı gösteriyor.”  
+  - Türkçe’de “sırasıyla” kelimesini düşün, İngilizce’de “respectively” aynı işlevi görüyor.  
+- **Pratik yöntemi:**  
+  İki liste yaz:  
+  ```
+  Cats, Dogs, Birds
+  2, 4, 6
+  ```
+  → *Cats, Dogs, and Birds have 2, 4, and 6 legs, respectively.*  
+
+---
+
+## 🎯 Mini Egzersiz
+Şu cümleyi tamamlamayı dene:  
+- *Paris and Rome are in France and Italy, respectively.*  
+→ Paris Fransa’da, Roma İtalya’da.  
+
+---
+
+İstersen sana birkaç **örnek cümle** daha hazırlayıp, boşluk doldurma şeklinde mini quiz yapabilirim. Böylece “respectively” kelimesini aktif kullanarak pekiştirirsin. İstiyor musun?
+
+
+Cümledeki "yields" kelimesinin Türkçe çevirisi ve anlamı, bağlamına göre şöyle açıklanabilir:
+
+## "Yields" Kelimesinin Türkçe Anlamı ve Kullanımı
+
+Bu teknik ve talimat ağırlıklı metinde ("Now move to the lower right corner... Pressing Esc X and entering sort yields:"), **"yields"** kelimesi genellikle şu anlamlarda kullanılır:
+
+| Türkçe Anlamı | Kullanım Bağlamı | Açıklama |
+| :--- | :--- | :--- |
+| **...sonucunu verir** | Matematik, Programlama, Komut Çalıştırma | Bir eylemin veya işlemin sonucunda ortaya çıkan çıktı veya sonuçtur. |
+| **...ortaya çıkar** | İpuçları, Keşifler, Görsel Çıktılar | Yapılan bir işlemden sonra ekranda veya çıktıda görünen sonuçtur. |
+
+### Cümledeki Özel Anlamı
+
+Verilen Emacs (veya JED gibi metin düzenleyici) komutları bağlamında, "yields" kelimesi, klavye komutunun çalıştırılmasından sonra **ekranınızda göreceğiniz sonucu** ifade eder.
+
+**Örnek Çeviri:**
+
+> "Şimdi, 'oranges' kelimesindeki 's' harfinden hemen sonraki dikdörtgenin sağ alt köşesine gidin. **Esc X** tuşlarına basıp **sort** (sırala) komutunu girmek, **şu sonucu verir:**"
+> *(veya daha akıcı bir ifadeyle: "Esc X'e basıp 'sort' komutunu girdiğinizde, **ortaya çıkacak sonuç şudur:**")*
+
+### Teknik Kullanım
+
+Programlama ve teknik dokümantasyonda "yields" kelimesi, bir fonksiyonun veya komutun ne döndürdüğünü (return value) belirtmek için de sıkça kullanılır.
+
+* **Örnek:** "The function `calculate_area(5)` **yields** $25$." (Fonksiyon `calculate_area(5)` **25 sonucunu verir/döndürür**.)
+
+Bu bağlamda "yields" kelimesi, İngilizce'de **"produces" (üretir)** veya **"results in" (ile sonuçlanır)** kelimeleriyle eş anlamlıdır.
+
+---
+
+Harika bir kelime! **"Yield"** İngilizcede birden çok anlama gelen ve bağlama göre değişen çok kullanışlı bir fiil (ve bazen isim)dir.
+
+Size **"yield"** kelimesinin temel Türkçe anlamlarını ve bunları nasıl anımsayabileceğinize dair ipuçları vereyim.
+
+---
+
+## 🚦 "Yield" Kelimesinin Temel Anlamları
+
+"Yield" kelimesinin üç ana anlam kategorisi vardır:
+
+### 1. Üretim / Sonuç Verme (Output/Result)
+
+Bu, genellikle teknik veya tarımsal bağlamda kullanılır.
+
+| İngilizce | Türkçe Anlamı | Örnek Cümle |
+| :--- | :--- | :--- |
+| **Yield (fiil)** | **Üretmek, Vermek, Sonuç Vermek** | The farm **yielded** a good crop of corn this year. (Çiftlik bu yıl iyi bir mısır **ürünü verdi/üretti**.) |
+| **Yield (isim)** | **Ürün, Verim, Getiri** | The bond offers a high **yield** of 5%. (Tahvil %5 yüksek bir **getiri** sunuyor.) |
+
+### 2. Boyun Eğme / Teslim Olma (Submission/Surrender)
+
+Bu, genellikle bir baskı, güç veya zorlama karşısında kullanılır.
+
+| İngilizce | Türkçe Anlamı | Örnek Cümle |
+| :--- | :--- | :--- |
+| **Yield (fiil)** | **Boyun Eğmek, Teslim Olmak, Pes Etmek** | They refused to **yield** to the pressure. (Baskıya **boyun eğmeyi** reddettiler.) |
+
+### 3. Yol Verme / Geri Çekilme (Giving Way/Traffic)
+
+Bu, özellikle trafik kuralları ve fiziki hareket bağlamında kullanılır.
+
+| İngilizce | Türkçe Anlamı | Örnek Cümle |
+| :--- | :--- | :--- |
+| **Yield (fiil)** | **Yol Vermek, Öncelik Tanımak** | You must **yield** to oncoming traffic. (Karşıdan gelen trafiğe **yol vermelisiniz**.) |
+
+---
+
+## 🧠 Anlamı Nasıl Anımsayabilirim? (Hafıza Teknikleri)
+
+Bu üç farklı anlamı akılda tutmak için basit bir senaryo ve bir hafıza cümlesi kullanabilirsiniz:
+
+### 1. Senaryo: Verimli ve İtaatkar Çiftçi
+
+Bir **çiftçi** (Üretim/Verim), zorlu hava şartlarına rağmen tarlasından bol **ürün (yield)** aldı. Ancak, zorba bir komşu çiftçi gelip tarlasının bir kısmını istediğinde, tartışmayı uzatmamak için ona **boyun eğmek (yield)** zorunda kaldı ve komşusunun traktörüne **yol verdi (yield)**.
+
+### 2. Anahtar Hafıza Cümlesi
+
+**"VERİMİ yüksek olan YOL VEREN teslim oldu."**
+
+* **VERİM:** Üretim/Getiri anlamı.
+* **YOL VEREN:** Trafikteki yol verme anlamı.
+* **Teslim oldu:** Boyun eğme/Teslim olma anlamı.
+
+### 3. Görsel İpucu
+
+Trafikteki **"YIELD" (Dur & Yol Ver)** tabelasını düşünün. Bu tabela size anında iki anlamı çağrıştırmalı:
+
+1.  **Yol Ver:** Arabayı durdurup başkasına geçiş hakkı tanı (Fiziksel anlam).
+2.  **Teslim Ol:** Geçiş üstünlüğünü başkasına teslim et (Boyun eğme anlamı).
+
+Bu görsel ipucuyla kelimeyi hatırlamak çok daha kolay olacaktır.
+
+Başka bir kelimeyle ilgili yardıma ihtiyacınız olursa bana sorabilirsiniz!
 
 
 
 
-
-
-
+Otomatik Temizleme (Volatility)
 
 
 
