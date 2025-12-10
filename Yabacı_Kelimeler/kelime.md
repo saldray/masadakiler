@@ -426,6 +426,36 @@ Başka bir kelimeyle ilgili yardıma ihtiyacınız olursa bana sorabilirsiniz!
 Otomatik Temizleme (Volatility)
 
 
+where sorrow, passion, and fate collide
+üzüntünün, tutkunun ve kaderin çarpıştığı yer
+
+Özetle, "utility" genellikle "fayda, yarar" ya da "kamu hizmeti" anlamına gelir. Bilgisayar bağlamında ise "yardımcı program" demektir.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
