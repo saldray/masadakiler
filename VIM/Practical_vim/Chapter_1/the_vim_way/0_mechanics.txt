@@ -1,0 +1,7 @@
+x komutu imlecin(kursorun) altındaki karakteri siler
+. son değişikliği tekrar et
+
+Line one
+Line two
+Line three
+Line four

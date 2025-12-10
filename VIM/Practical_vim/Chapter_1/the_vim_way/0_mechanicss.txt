@@ -1,0 +1,8 @@
+x komutu imlecin(kursorun) altındaki karakteri siler
+. son değişikliği tekrar et
+.. iki kere son yapılan komudu tekrar eder.
+
+Line one
+Line two
+Line three
+Line four
