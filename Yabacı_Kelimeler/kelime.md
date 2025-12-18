@@ -432,16 +432,63 @@ where sorrow, passion, and fate collide
 Özetle, "utility" genellikle "fayda, yarar" ya da "kamu hizmeti" anlamına gelir. Bilgisayar bağlamında ise "yardımcı program" demektir.
 
 
+---
+
+1. Lacks Common-Sense
+
+İngilizce Terim,Türkçe Karşılığı,Açıklama
+Lacks Common-Sense,Sağduyudan Yoksun / Sağduyu Eksikliği,"Bir kişi veya sistemin, genel kabul görmüş, temel ve pratik bilgileri, deneyimleri veya yargıları kullanma yeteneğinin olmaması durumudur. Yani, mantıklı ve beklenen tepkiyi verememesi veya açıkça belli olan şeyleri anlayamaması halidir. Bu genellikle Yapay Zeka (AI) sistemlerinin gerçek dünya bilgisi ve bağlamını yorumlama eksikliği için kullanılır."
+Örnek Kullanım,The AI model keeps making mistakes because it lacks common-sense about how objects interact.,"Yapay zeka modeli, nesnelerin nasıl etkileşime girdiğine dair sağduyudan yoksun olduğu için hata yapmaya devam ediyor."
+
+2. Lacks Causality
+
+İngilizce Terim,Türkçe Karşılığı,Açıklama
+Lacks Causality,Nedensellikten Yoksun / Nedensellik Eksikliği,"Bir olay, eylem veya durum ile bunun sonucu arasındaki sebep-sonuç ilişkisini kurma yeteneğinin olmamasıdır. Yani, bir şeyin neden olduğunu (sebep) ve bunun neye yol açacağını (sonuç) anlayamama durumudur. Bu da özellikle AI ve makine öğrenimi modellerinin sadece ilişki (korelasyon) bulup, nedenini (sebep) açıklayamaması durumunda kullanılır."
+Örnek Kullanım,"The statistical correlation is strong, but the analysis lacks causality to prove one thing caused the other.","İstatistiksel ilişki güçlü, ancak analiz, bir şeyin diğerine neden olduğunu kanıtlayacak nedensellikten yoksun."
 
 
+"Lacks common-sense" ve "lacks causality" ifadelerinin Türkçe karşılıkları ve açıklamaları aşağıdadır:
 
+---
 
+## 🇹🇷 Türkçe Anlamları ve Açıklamaları
 
+### 1. Lacks Common-Sense
 
+| İngilizce Terim | Türkçe Karşılığı | Açıklama |
+| :--- | :--- | :--- |
+| **Lacks Common-Sense** | **Sağduyudan Yoksun** / **Sağduyu Eksikliği** | Bir kişi veya sistemin, genel kabul görmüş, temel ve pratik bilgileri, deneyimleri veya yargıları kullanma yeteneğinin olmaması durumudur. Yani, **mantıklı ve beklenen tepkiyi verememesi** veya **açıkça belli olan şeyleri anlayamaması** halidir. Bu genellikle Yapay Zeka (AI) sistemlerinin gerçek dünya bilgisi ve bağlamını yorumlama eksikliği için kullanılır. |
+| **Örnek Kullanım** | *The AI model keeps making mistakes because it **lacks common-sense** about how objects interact.* | *Yapay zeka modeli, nesnelerin nasıl etkileşime girdiğine dair **sağduyudan yoksun** olduğu için hata yapmaya devam ediyor.* |
 
+### 2. Lacks Causality
 
+| İngilizce Terim | Türkçe Karşılığı | Açıklama |
+| :--- | :--- | :--- |
+| **Lacks Causality** | **Nedensellikten Yoksun** / **Nedensellik Eksikliği** | Bir olay, eylem veya durum ile bunun sonucu arasındaki **sebep-sonuç ilişkisini** kurma yeteneğinin olmamasıdır. Yani, bir şeyin neden olduğunu (sebep) ve bunun neye yol açacağını (sonuç) anlayamama durumudur. Bu da özellikle AI ve makine öğrenimi modellerinin sadece **ilişki (korelasyon) bulup**, **nedenini (sebep)** açıklayamaması durumunda kullanılır. |
+| **Örnek Kullanım** | *The statistical correlation is strong, but the analysis **lacks causality** to prove one thing caused the other.* | *İstatistiksel ilişki güçlü, ancak analiz, bir şeyin diğerine neden olduğunu kanıtlayacak **nedensellikten yoksun**.* |
 
+---
 
+**Özetle:**
+
+* **Lacks Common-Sense:** Temel, pratik ve genel geçer **mantık** eksikliği.
+* **Lacks Causality:** Olaylar arasındaki **sebep-sonuç** ilişkisini kurma eksikliği.
+
+Bu terimlerin özellikle Yapay Zeka ve felsefe alanlarında sıkça kullanıldığını unutmayın.
+
+Bu konularla ilgili yapay zeka alanında daha derin bir karşılaştırma veya açıklama ister misiniz?
+
+---
+
+"Assignment" İngilizce bir kelime ve Türkçede birkaç farklı anlamı var, bağlama göre değişiyor:
+
+- **[Görev](guide://action?prefill=Tell%20me%20more%20about%3A%20G%C3%B6rev)**: Birine verilen sorumluluk ya da iş. Örneğin, "askeri assignment" → askeri görev.  
+- **[Atama](guide://action?prefill=Tell%20me%20more%20about%3A%20Atama)**: Bir pozisyona veya role resmi olarak yerleştirme. Örneğin, "teacher’s assignment" → öğretmenin sınıfa atanması.  
+- **[Ödev](guide://action?prefill=Tell%20me%20more%20about%3A%20%C3%96dev)**: Eğitim bağlamında en sık kullanılan anlamı. Öğrencilere verilen yazılı ya da pratik çalışma.  
+
+Yani bir öğrenci için "assignment" genellikle **ödev** demek, iş hayatında ise **görev** veya **atama** anlamına gelebiliyor.  
+
+İstersen sana örnek cümlelerle farklı bağlamlarda kullanımını gösterebilirim. İlgini çeker mi?
 
 
 
