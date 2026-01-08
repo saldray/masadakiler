@@ -491,11 +491,137 @@ Yani bir öğrenci için "assignment" genellikle **ödev** demek, iş hayatında
 İstersen sana örnek cümlelerle farklı bağlamlarda kullanımını gösterebilirim. İlgini çeker mi?
 
 
+---
 
+**Contradiction**, Türkçe karşılığıyla **çelişki** demektir.
 
+En temel anlamıyla; bir durumun, bir ifadenin veya bir fikrin kendi içinde tutarsız olması ya da bir başka durumla tamamen zıt düşmesi durumudur.
 
+İşte bu kavramın farklı alanlardaki karşılıkları:
 
+### 1. Mantık ve Felsefede
 
+Mantıkta bir önermenin hem doğru hem de yanlış olduğunu iddia etmek bir çelişkidir. Örneğin: *"Bu kapı hem tamamen açık hem de tamamen kapalıdır"* cümlesi bir contradiction örneğidir.
+
+### 2. Günlük Kullanımda
+
+Bir kişinin söyledikleriyle yaptıklarının birbirini tutmaması durumunda kullanılır.
+
+* **Örnek:** "Çevre kirliliğine karşı olduğunu söyleyip yere çöp atması büyük bir çelişki (contradiction)."
+
+### 3. Edebiyat ve Retorikte (Oksimoron)
+
+Bazen yazarlar derin bir anlam yaratmak için zıt kavramları bir arada kullanırlar.
+
+* **Örnek:** "Sessiz çığlık" (Silent scream).
+
+---
+
+### Temel Kelime Bilgisi
+
+| Kelime | Türü | Türkçe Karşılığı |
+| --- | --- | --- |
+| **Contradict** | Fiil | Çelişmek, yalanlamak, aksini iddia etmek |
+| **Contradictory** | Sıfat | Çelişkili, zıt |
+| **Self-contradiction** | İsim | Kendiyle çelişme |
+
+**Şunu merak ediyorum:** Bu kelimeyi bir makalede mi gördünüz yoksa İngilizce öğrenirken karşınıza çıkan bir örnek üzerinden mi sormak istediniz? İsterseniz bu kelimenin cümle içinde kullanımına dair daha fazla örnek verebilirim.
+
+---
+
+**Transcendental**, Türkçe karşılığıyla **deneyimüstü** veya **aşkın** anlamına gelir. Kelime kökeni Latincedeki "transcendere" (ötesine geçmek, tırmanmak) fiiline dayanır.
+
+Kullanıldığı alana göre anlamı oldukça değişen derin bir kavramdır. İşte en yaygın kullanım alanları:
+
+---
+
+### 1. Felsefede (Kant ve Deneyim)
+
+Felsefi bağlamda bu terim genellikle Immanuel Kant ile özdeşleşmiştir. Bir şeyin doğrudan kendisinden ziyade, o şeyi **anlamamızı sağlayan zihinsel koşulları** ifade eder.
+
+* **Basitçe:** Dünyadaki nesneleri değil, o nesneleri algılamamızı sağlayan "zihin gözlüklerimizi" (zaman ve uzay gibi) inceler.
+* **Transandantal Felsefe:** Bilginin nesnelerle değil, nesneleri kavrama biçimimizle ilgilenen düşünce sistemidir.
+
+### 2. Matematikte (Transandantal Sayılar)
+
+Matematikte bir sayının "transcendental" olması, o sayının rasyonel katsayılı hiçbir cebirsel denklemin kökü olmaması demektir. Yani bu sayılar, basit aritmetik işlemlerle elde edilemezler.
+
+* **Örnekler:**  (Pi sayısı) ve  (Euler sayısı) en bilinen transandantal sayılardır.
+
+### 3. Ruhani ve Günlük Anlamda
+
+Maddi dünyanın, fiziksel sınırların ve duyularla algılanan gerçekliğin **ötesinde** olan durumlar için kullanılır.
+
+* **Örnek:** "Transandantal Meditasyon" (Kişinin günlük düşünce akışının ötesine geçerek saf bilince ulaşmayı hedeflediği bir teknik).
+* **Aşkınlık:** Tanrı'nın evrenin dışında ve üstünde olması durumu için de "transcendental" sıfatı kullanılır.
+
+---
+
+### Özet Karşılaştırma
+
+| Alan | Odak Noktası | Ana Tema |
+| --- | --- | --- |
+| **Felsefe** | Algı Koşulları | Zihnin sınırları ve işleyişi |
+| **Matematik** | Sayı Türleri | Cebirsel denklemlerle çözülememe |
+| **Spiritüellik** | Ruhsal Durum | Fiziksel dünyanın ötesine geçiş |
+
+**Bu terimi hangi bağlamda duydunuz?** Eğer Kant felsefesi veya matematiksel bir problem üzerine çalışıyorsanız, o alana özel daha detaylı açıklamalar yapabilirim.
+
+---
+
+Matematiksel bağlamda **transcendental (transandantal/aşkın)** terimi, sayıların "cebirsel" olup olmamasına göre yapılan bir sınıflandırmadır.
+
+Bir sayının **transcendental** olması demek, o sayının rasyonel katsayılı, sıfırdan farklı hiçbir **polinom denkleminin kökü olmaması** demektir.
+
+Daha basit bir ifadeyle;  şeklindeki bir denklemde (burada katsayılar tam sayı veya rasyonel sayıdır),  yerine o sayıyı koyduğunuzda sonuç asla sıfır çıkmıyorsa o sayı transandantaldır.
+
+---
+
+### 1. Cebirsel Sayılar vs. Transandantal Sayılar
+
+Bu farkı anlamak için önce "cebirsel" sayılara bakalım:
+
+* ** cebirseldir:** Çünkü  denkleminin bir köküdür.
+* ** cebirseldir:** Çünkü  denkleminin köküdür.
+
+Ancak **transandantal sayılar** bu tür denklemlerle hapsedilemezler:
+
+* ** (Pi):** Hiçbir sonlu polinom denklemi  sonucunu vermez.
+* ** (Euler Sayısı):** Doğal logaritmanın tabanı olan bu sayı da transandantaldır.
+
+### 2. Temel Özellikleri
+
+* **Sayılamaz Çokluk:** Matematikçi Georg Cantor, transandantal sayıların miktarının, cebirsel sayılardan çok daha fazla olduğunu kanıtlamıştır. Aslında sayı doğrusundaki sayıların neredeyse tamamı transandantaldır; ancak biz sadece birkaç tanesini (  gibi) ismen biliriz.
+* **Hesaplanabilirlik:** Bu sayılar genellikle sonsuza kadar kendini tekrar etmeden giden ondalık basamaklara sahiptir ().
+
+### 3. Transandantal Fonksiyonlar
+
+Sadece sayılar değil, fonksiyonlar da bu kategoriye girebilir. Eğer bir fonksiyon (örneğin ,  veya ), değişkeniyle sadece cebirsel işlemlerle (toplama, çarpma, kök alma) ifade edilemiyorsa buna **transandantal fonksiyon** denir.
+
+---
+
+### Neden Önemli?
+
+Bu kavram, antik çağın en büyük problemlerinden biri olan **"Daireyi Kareye Dönüştürme"** (Squaring the circle) probleminin neden imkansız olduğunu kanıtlamıştır.  sayısı transandantal olduğu için, sadece pergel ve cetvel kullanarak bir daireyle aynı alana sahip bir kare çizmek matematiksel olarak mümkün değildir.
+
+**Daha ileri bir teknik ayrıntı isterseniz, örneğin bir sayının transandantal olduğunu kanıtlayan Lindemann-Weierstrass teoremi hakkında bilgi verebilirim. İster misiniz?**
+
+---
+
+i = aSOL, set j = bSOL, and set k = cSOL.
+2. while i < aSAĞ and j < bSAĞ, repeat:
+
+    Set: Atamak, değerini belirlemek.
+
+    While: ... iken, ... olduğu sürece.
+
+    And: Ve.
+
+    Repeat: Tekrarla.
+
+    SOL (Left): Dizinin veya alt grubun sol tarafını temsil eder.
+
+    SAĞ (Right): Dizinin veya alt grubun sağ tarafını temsil eder.
 
 
 
