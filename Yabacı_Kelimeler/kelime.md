@@ -624,14 +624,127 @@ i = aSOL, set j = bSOL, and set k = cSOL.
     SAĞ (Right): Dizinin veya alt grubun sağ tarafını temsil eder.
 
 
+frustrating
+adjective
+Add to word list
+making you feel frustrated
+
+can sıkıcı, moral bozucu, umut kırıcı
+
+a frustrating situation
+It's frustrating to see money going to waste like that.
+
+---
+
+Harika bir hobi! "İp atlama" hevesini İngilizcede durumun ne kadar ciddi olduğuna göre birkaç farklı şekilde ifade edebilirsin:
+
+### En Yaygın ve Doğal İfadeler
+
+* **"I’m really into jump roping lately."**
+(Son zamanlarda ip atlamaya çok meraklıyım/ilgi duyuyorum.)
+* **"I’ve been wanting to get into jump roping."**
+(İp atlamaya başlamak için bir hevesim var / başlamayı istiyorum.)
+* **"I have an urge to start jumping rope."**
+(İp atlamaya karşı bir istek/heves duyuyorum.)
+
+### Biraz Daha "Heyecan" İçerenler
+
+* **"I’m excited about jumping rope."**
+(İp atlama konusunda heyecanlıyım.)
+* **"I’ve developed a passion for jump roping."**
+(İp atlamaya karşı bir tutku geliştirdim.)
+
+---
+
+**Küçük Bir Not:**
+Amerikan İngilizcesinde genellikle **"jump rope"**, İngiliz İngilizcesinde ise **"skipping"** kelimesi kullanılır. Eğer İngiltere taraflarına yönelik konuşuyorsan *"I’m into skipping"* diyebilirsin.
+
+Bu hevesini bir adım öteye taşımak istersen, sana başlangıç seviyesi için bir haftalık çalışma programı hazırlamamı ister misin?
+
+---
+Kesinlikle kullanılabilir, ancak küçük bir düzeltmeyle: Kelimenin aslı **"enthusiasm"** (isim hali) veya **"enthusiastic"** (sıfat hali).
+
+Bu kelimeyi kullandığında, sadece bir "istek" değil, aynı zamanda yüksek bir **enerji ve tutku** ifade etmiş olursun. Diğer ifadelerle arasındaki temel farkları şöyle özetleyebilirim:
+
+### Karşılaştırma Tablosu
+
+| İfade | Tonu / Anlamı | Kullanım Örneği |
+| --- | --- | --- |
+| **Enthusiasm** | Çok heyecanlı, tutkulu ve pozitif bir enerji içerir. | "I have a lot of **enthusiasm** for jump roping." |
+| **Interest** | Daha sakin bir ilgi. "Merak ediyorum" seviyesindedir. | "I have an **interest** in jump roping." |
+| **Urge / Desire** | İçten gelen bir dürtü veya güçlü bir yapma isteği. | "I have a strong **desire** to jump rope." |
+| **Heves (Colloquial)** | "Heveslendim" anlamındaki günlük kullanım. | "I'm **hooked on** the idea of jump roping." |
+
+---
+
+### Nasıl Kullanabilirsin?
+
+Eğer "enthusiasm" kelimesini cümlede kullanmak istersen şu kalıplar çok doğal durur:
+
+1. **"I have a great deal of enthusiasm for jump roping."**
+*(İp atlamaya karşı büyük bir hevesim/heyecanım var.)*
+2. **"I am very enthusiastic about starting jump rope."**
+*(İp atlamaya başlama konusunda çok hevesliyim/istekliyim.)*
+
+> **Ufak bir tüyo:** "Enthusiasm" biraz daha resmi veya "kitabi" kaçabilir. Arkadaş ortamında veya sosyal medyada **"I'm super hyped about..."** dersen "çok fena heveslendim/yükseldim" anlamını daha samimi bir şekilde verirsin.
+
+Bu hevesin geçici mi yoksa ciddi bir spor disiplini mi olsun istiyorsun? İstersen sana doğru ip seçimi hakkında bilgi verebilirim.
 
 
+postpone
+verb
+to arrange for something to happen at a later time
+ertelemek, tehir etmek
+The trip to the museum has been postponed until next week.
+
+postpone
+verb
+/pəsˈpəun/
+to cancel until a future time
+ertelemek
+The football match has been postponed (till tomorrow).
+
+"Good deduction!" ifadesi Türkçede şu anlamlara gelir:
+
+**"İyi akıl yürüttün!"** veya **"Güzel çıkarım!"**
+
+Bir durumu eldeki ipuçlarını birleştirerek doğru tahmin ettiğinde ya da mantıklı bir sonuca vardığında söylenen bir övgü sözüdür. Sherlock Holmes gibi karakterlerin sıkça duyduğu türden bir cümledir.
+
+---
+
+### Diğer Yaygın Karşılıkları:
+
+* **Doğru tahmin!**
+* **İyi yakaladın!**
+* **Mantıklı bir çıkarım!**
+
+**Küçük bir not:** Buradaki "deduction" kelimesi hukukta veya matematikte "tümdengelim" anlamında da kullanılır ama günlük konuşmada daha çok "bir ipucundan yola çıkarak sonuca ulaşma" başarısını ifade eder.
+
+Bu konuyla ilgili (hukuk terimleri veya çeviriler gibi) başka bir merak ettiğin nokta var mı?
 
 
+Bu meşhur kalıp, mantık ve bilim felsefesinde çok önemli bir ayrımı vurgular. Türkçeye şu şekillerde çevrilebilir:
 
+## En Yaygın Çeviriler
 
+* **"Kanıtın yokluğu, yokluğun kanıtı değildir."** (En doğrudan ve yaygın kullanım)
+* **"Bir şeyin kanıtının olmaması, o şeyin yok olduğu anlamına gelmez."** (Daha açıklayıcı bir yaklaşım)
 
+---
 
+### Ne Anlama Gelir?
 
+Bu ifade, bir şeyin varlığına dair elimizde henüz bir delil olmamasının, o şeyin kesinlikle "yok" olduğunu kanıtlamaya yetmeyeceğini hatırlatır.
 
+**Örnek:** * Evinizde gizli bir kamera bulamamış olmanız (kanıtın yokluğu), evde kesinlikle kamera olmadığı (yokluğun kanıtı) anlamına gelmeyebilir; belki de sadece çok iyi saklanmıştır.
+
+---
+
+### Dikkat Edilmesi Gereken Nokta
+
+Bu mantık her zaman mutlak bir doğru olarak kabul edilmez. Eğer bir şeyi bulmak için **her yeri titizlikle aradıysanız** ve hala bulamadıysanız, bu durum zamanla o şeyin yokluğuna dair güçlü bir gösterge haline gelmeye başlar.
+
+Bu sözün bağlamını veya kullanıldığı özel bir metni paylaşırsanız, cümleyi o akışa daha uygun şekilde (daha akademik veya daha gündelik) revize edebilirim.
+
+İsterseniz bu mantık hatasının bilimsel araştırmalarda nasıl kullanıldığına dair bir örnek verebilirim; ne dersiniz?
 
