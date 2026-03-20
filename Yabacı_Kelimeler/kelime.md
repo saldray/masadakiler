@@ -748,3 +748,39 @@ Bu sözün bağlamını veya kullanıldığı özel bir metni paylaşırsanız, 
 
 İsterseniz bu mantık hatasının bilimsel araştırmalarda nasıl kullanıldığına dair bir örnek verebilirim; ne dersiniz?
 
+---
+
+başkötü adam (main villain)
+
+kez karşımıza vasiyetname yani  testament- ahit 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
